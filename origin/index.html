@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,minimal-ui,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" viewport-fit="cover"/>
+	<html lang="en">
+	<link rel="stylesheet" href="dist/css/home.css?version=1.1">
+	<link rel="stylesheet" href="dist/css/swiper.css">
+	<!--<link rel="stylesheet" href="css/reset.css"/>-->
+	<script src="dist/js/jquery1.42.min.js"></script>
+	<script src="dist/js/swiper.js"></script>
+</head>
+<body>
+	<div class="pg-index-search content-height" style="display:none">
+		<div class="search-header">
+			<div class="flex search-wrapper">
+				<div class="form-wrapper flex flex-1">
+					<div class="car-type">
+						<span>二手车</span>
+						<img src="dist/css/jiao.png" width="8" />
+					</div>
+					<form action class="search-input flex flex-1">
+						<input type="text" placeholder="搜索你想要的车" autocomplete="off" autofocus="autofocus"/>
+					</form>
+				</div>
+				<ul class="bubble" style="display:none">
+					<span></span>
+					<li class="text-center">新车</li>
+					<div class="split-line"></div>
+					<li class="text-center">二手车</li>
+				</ul>
+				<span class="fs-16 cancel">取消</span>
+				
+			</div>
+		</div>
+		<div class="co-search-history">
+			<div class="history-list search-list">
+				<div class="history list-header">
+					<span class="text-gray">历史搜索</span>
+				</div>
+				<a href="#" class="key-word-lable">宝马</a>
+			</div>
+		</div>
+		<div class="co-search-hot">
+			<div class="hot-list search-list">
+				<div class="hot list-header">
+					<span class="text-gray">热门搜索</span>
+				</div>
+				<a href="#" class="key-word-lable">宝马</a>
+				<a href="#" class="key-word-lable">奔驰</a>
+				<a href="#" class="key-word-lable">奥迪</a>
+				<a href="#" class="key-word-lable">大众</a>
+				<a href="#" class="key-word-lable">SUV</a>
+
+			</div>
+		</div>
+	</div>
+	<div class="pg-index" >
+		<header class="masthead flex" role="banner">
+			<a href="/" class="logo-div"><img src="../img/logo-new.png" width="80" /></a>
+			<div class="search-div flex-1">
+				
+				<div class="search-input">
+				<i></i>
+				搜索你想要的车
+				</div>
+			</div>
+			<script>
+				$(document).ready(function(){
+					$(".co-menu").click(function(){
+						$(".mask").show();
+					});
+					
+
+				})
+			</script>
+			
+			
+			<div class="co-menu side-menu">
+				<div class="menu-div"></div>
+				<div class="mask-menu" style="display: none;">
+					<div class="mask">
+						<div class="row">
+							<div class="list">
+								<a href="#"><p>首页</p></a>
+								<a href="#"><p>我要买车</p></a>
+								<a href="#"><p>我要卖车</p></a>
+								
+							</div>
+						</div>>
+					</div>
+				</div>
+			</div>
+			
+
+		</header>
+		<main>
+
+		  <div class="swiper-container">
+		    <div class="swiper-wrapper">
+		      <div class="swiper-slide"><img src="../img/1.jpg" alt=""></div>
+		      <div class="swiper-slide"><img src="../img/2.jpg" alt=""></div>
+		      <div class="swiper-slide"><img src="../img/3.jpg" alt=""></div>
+		      <div class="swiper-slide"><img src="../img/4.jpg" alt=""></div>
+		      <div class="swiper-slide"><img src="../img/5.png" alt=""></div>
+		    </div>
+		    <!-- Add Pagination -->
+		    <div class="swiper-pagination"></div>
+		  </div>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+    	autoplay: 3000,
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '"></span>';
+        },
+      },
+    });
+  </script>
+
+			
+			<div class="select ">
+				<div class="carbrand-items flex">
+					<div class="brand-card"><img src="../img/audi.webp" width="32" height="32">
+						<div class="brand">别克</div>
+					</div>
+				
+				
+					<div class="brand-card"><img src="../img/bmw.webp" width="32" height="32">
+						<div class="brand">宝马</div>
+					</div>
+				
+			
+					<div class="brand-card"><img src="../img/benz.webp" width="32" height="32">
+						<div class="brand">奔驰</div>
+					</div>
+			
+				
+					<div class="brand-card"><img src="../img/bentian.webp" width="32" height="32">
+						<div class="brand">本田</div>
+					</div>
+
+					<div class="brand-card" di="more"><img src="../img/more.webp" width="32" height="32">
+						<div class="brand">更多</div>
+					</div>
+				</div>
+				
+				<div class="carprice-items flex">
+					<p>8万以下</p>
+					<p>8-12万</p>
+					<p>12-18万万</p>
+					<p>18-24万</p>
+					<p>24万以上</p>
+				</div>
+				<div class="all-list-btn">
+					<span>查看全部二手车</span>
+				</div>
+
+			</div>
+			<div class="cars-list">
+				<div class="list-title">为您推荐</div>
+				<div class="cars-content " >
+					<div class="cars-item">
+						<div class="item-cover" href="#"><a><img src="../img/1-300x200.jpg"/></a></div>
+						<div class="cars-info">
+							<a class="item-name" href="#">宝马5系 <p>2011款 528Li 领先型</p></a>
+
+							<div class="price-info">
+								<span class="price">￥34.55万</span>
+								<span class="reg_date">上牌：2011/09</span>
+							</div>
+							<div class="tags">
+								亮点：GPS，定速巡航，经典直6，保养好
+							</div>
+						</div>
+					</div>
+					<div class="cars-item">
+						<div class="item-cover" href="#"><a><img src="../img/1-300x200.jpg"/></a></div>
+						<div class="cars-info">
+							<a class="item-name" href="#">宝马5系 <p>2011款 528Li 领先型</p></a>
+
+							<div class="price-info">
+								<span class="price">￥34.55万</span>
+								<span class="reg_date">上牌：2011/09</span>
+							</div>
+							<div class="tags">
+								亮点：GPS，定速巡航，经典直6，保养好
+							</div>
+						</div>
+					</div>
+					<div class="cars-item">
+						<div class="item-cover" href="#"><a><img src="../img/1-300x200.jpg"/></a></div>
+						<div class="cars-info">
+							<a class="item-name" href="#">宝马5系 <p>2011款 528Li 领先型</p></a>
+
+							<div class="price-info">
+								<span class="price">￥34.55万</span>
+								<span class="reg_date">上牌：2011/09</span>
+							</div>
+							<div class="tags">
+								亮点：GPS，定速巡航，经典直6，保养好
+							</div>
+						</div>
+					</div>
+					<div class="cars-item">
+						<div class="item-cover" href="#"><a><img src="../img/1-300x200.jpg"/></a></div>
+						<div class="cars-info">
+							<a class="item-name" href="#">宝马5系 <p>2011款 528Li 领先型</p></a>
+
+							<div class="price-info">
+								<span class="price">￥34.55万</span>
+								<span class="reg_date">上牌：2011/09</span>
+							</div>
+							<div class="tags">
+								亮点：GPS，定速巡航，经典直6，保养好
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="cars-list">
+				<div class="list-title">热门好车</div>
+				<div class="cars-content flex" >
+					<div class="cars-item">
+						<div class="item-cover" href="#"><a><img src="../img/1-300x200.jpg"/></a></div>
+						<div class="cars-info">
+							<a class="item-name" href="#">宝马5系 <p>2011款 528Li 领先型</p></a>
+
+							<div class="price-info">
+								<span class="price">￥34.55万</span>
+								<span class="reg_date">上牌：2011/09</span>
+							</div>
+							<div class="tags">
+								亮点：GPS，定速巡航，经典直6，保养好
+							</div>
+						</div>
+					</div>
+					<div class="cars-item">
+						<div class="item-cover" href="#"><a><img src="../img/1-300x200.jpg"/></a></div>
+						<div class="cars-info">
+							<a class="item-name" href="#">宝马5系 <p>2011款 528Li 领先型</p></a>
+
+							<div class="price-info">
+								<span class="price">￥34.55万</span>
+								<span class="reg_date">上牌：2011/09</span>
+							</div>
+							<div class="tags">
+								亮点：GPS，定速巡航，经典直6，保养好
+							</div>
+						</div>
+					</div>
+					<div class="cars-item">
+						<div class="item-cover" href="#"><a><img src="../img/1-300x200.jpg"/></a></div>
+						<div class="cars-info">
+							<a class="item-name" href="#">宝马5系 <p>2011款 528Li 领先型</p></a>
+
+							<div class="price-info">
+								<span class="price">￥34.55万</span>
+								<span class="reg_date">上牌：2011/09</span>
+							</div>
+							<div class="tags">
+								亮点：GPS，定速巡航，经典直6，保养好
+							</div>
+						</div>
+					</div>
+					<div class="cars-item">
+						<div class="item-cover" href="#"><a><img src="../img/1-300x200.jpg"/></a></div>
+						<div class="cars-info">
+							<a class="item-name" href="#">宝马5系 <p>2011款 528Li 领先型</p></a>
+
+							<div class="price-info">
+								<span class="price">￥34.55万</span>
+								<span class="reg_date">上牌：2011/09</span>
+							</div>
+							<div class="tags">
+								亮点：GPS，定速巡航，经典直6，保养好
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="cars-list">
+				<div class="list-title">准新车</div>
+				<div class="cars-content flex" >
+					<div class="cars-item">
+						<div class="item-cover" href="#"><a><img src="../img/1-300x200.jpg"/></a></div>
+						<div class="cars-info">
+							<a class="item-name" href="#">宝马5系 <p>2011款 528Li 领先型</p></a>
+
+							<div class="price-info">
+								<span class="price">￥34.55万</span>
+								<span class="reg_date">上牌：2011/09</span>
+							</div>
+							<div class="tags">
+								亮点：GPS，定速巡航，经典直6，保养好
+							</div>
+						</div>
+					</div>
+					<div class="cars-item">
+						<div class="item-cover" href="#"><a><img src="../img/1-300x200.jpg"/></a></div>
+						<div class="cars-info">
+							<a class="item-name" href="#">宝马5系 <p>2011款 528Li 领先型</p></a>
+
+							<div class="price-info">
+								<span class="price">￥34.55万</span>
+								<span class="reg_date">上牌：2011/09</span>
+							</div>
+							<div class="tags">
+								亮点：GPS，定速巡航，经典直6，保养好
+							</div>
+						</div>
+					</div>
+					<div class="cars-item">
+						<div class="item-cover" href="#"><a><img src="../img/1-300x200.jpg"/></a></div>
+						<div class="cars-info">
+							<a class="item-name" href="#">宝马5系 <p>2011款 528Li 领先型</p></a>
+
+							<div class="price-info">
+								<span class="price">￥34.55万</span>
+								<span class="reg_date">上牌：2011/09</span>
+							</div>
+							<div class="tags">
+								亮点：GPS，定速巡航，经典直6，保养好
+							</div>
+						</div>
+					</div>
+					<div class="cars-item">
+						<div class="item-cover" href="#"><a><img src="../img/1-300x200.jpg"/></a></div>
+						<div class="cars-info">
+							<a class="item-name" href="#">宝马5系 <p>2011款 528Li 领先型</p></a>
+
+							<div class="price-info">
+								<span class="price">￥34.55万</span>
+								<span class="reg_date">上牌：2011/09</span>
+							</div>
+							<div class="tags">
+								亮点：GPS，定速巡航，经典直6，保养好
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cars-list">
+				<div class="list-title">练手车</div>
+				<div class="cars-content flex" >
+					<div class="cars-item">
+						<div class="item-cover" href="#"><a><img src="../img/1-300x200.jpg"/></a></div>
+						<div class="cars-info">
+							<a class="item-name" href="#">宝马5系 <p>2011款 528Li 领先型</p></a>
+
+							<div class="price-info">
+								<span class="price">￥34.55万</span>
+								<span class="reg_date">上牌：2011/09</span>
+							</div>
+							<div class="tags">
+								亮点：GPS，定速巡航，经典直6，保养好
+							</div>
+						</div>
+					</div>
+					<div class="cars-item">
+						<div class="item-cover" href="#"><a><img src="../img/1-300x200.jpg"/></a></div>
+						<div class="cars-info">
+							<a class="item-name" href="#">宝马5系 <p>2011款 528Li 领先型</p></a>
+
+							<div class="price-info">
+								<span class="price">￥34.55万</span>
+								<span class="reg_date">上牌：2011/09</span>
+							</div>
+							<div class="tags">
+								亮点：GPS，定速巡航，经典直6，保养好
+							</div>
+						</div>
+					</div>
+					<div class="cars-item">
+						<div class="item-cover" href="#"><a><img src="../img/1-300x200.jpg"/></a></div>
+						<div class="cars-info">
+							<a class="item-name" href="#">宝马5系 <p>2011款 528Li 领先型</p></a>
+
+							<div class="price-info">
+								<span class="price">￥34.55万</span>
+								<span class="reg_date">上牌：2011/09</span>
+							</div>
+							<div class="tags">
+								亮点：GPS，定速巡航，经典直6，保养好
+							</div>
+						</div>
+					</div>
+					<div class="cars-item">
+						<div class="item-cover" href="#"><a><img src="../img/1-300x200.jpg"/></a></div>
+						<div class="cars-info">
+							<a class="item-name" href="#">宝马5系 <p>2011款 528Li 领先型</p></a>
+
+							<div class="price-info">
+								<span class="price">￥34.55万</span>
+								<span class="reg_date">上牌：2011/09</span>
+							</div>
+							<div class="tags">
+								亮点：GPS，定速巡航，经典直6，保养好
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			
+			<div class="cars-more">
+				<span>
+					<a href="http://www.51buycar.com/sale/1">查看更多</a>
+				</span>
+			</div>
+		</main>
+		<footer role="contentinfo" class="footer">
+			<span>Copyright &copy 2014  51BuyCar,All Rights Reserved<br/>
+
+			<a target="_blank href="#">沪ICP备 14027574-1 号</a>
+		    </span>
+		</footer>
+	</div>
+</body>
+<script>
+$(document).ready(function(){
+	$(".mask-menu").click(function(){
+		$(this).hide();
+	});
+	$(".menu-div").click(function(){
+		$(".mask-menu").show();
+	});
+	$(".search-div").click(function(){
+		$(".pg-list-index").hide()
+		$(".pg-index-search").show()
+	});
+	$(".cancel").click(function(){
+		$(".pg-index-search").hide()
+		$(".pg-list-index").show()
+	});
+})
+</script>
+</html>

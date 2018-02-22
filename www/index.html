@@ -1,0 +1,855 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<html lang="en">
+	<link rel="stylesheet" href="../css/reset.css"/>
+	<link rel="stylesheet" href="../css/common.css"/>
+	<link rel="stylesheet" href="../css/style.css"/>
+	<script src="../Js/jquery1.42.min.js"></script>
+    <script src="../Js/jquery.SuperSlide.2.1.1.js"></script>
+
+</head>
+<body>
+<script>
+	$(document).ready(function(){
+    $("#search-text").focus(function(){
+        if($(this).val() == '搜索你想要的车'){
+            $(this).val('');
+        }
+    });
+    $("#search-text").blur(function(){
+        if($(this).val() == ''){
+            $(this).val('搜索你想要的车');
+        }
+    });
+});
+</script>
+
+	<!--header start*/-->
+	<header class="header">
+		<div class="wrapper">
+			<a href="/" class="logo"><img src="../img/logo-new.png"/></a>
+			<div class="search" >
+				<form class="index-search" action="http://www.51buycar.com" method="GET">
+					<input type="text" name="search_text" id="search-text" value="搜索你想要的车" class="search_text"/>
+					
+					
+					<div class="options">
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-5015?word=宝马">宝马</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/suv?word=宝马">SUV</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-375?word=锐志">锐志</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-657?word=科鲁兹">科鲁兹</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-982?word=英朗">英朗</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-614?word=朗逸">朗逸</a>
+					</div>
+				
+					<button type="submit" class="search-submit">
+						<i></i>
+					</button>
+				</form>
+			</div>
+		</div>
+		<nav class="nav">
+			<div class="wrapper clearfix">
+				<div class="main-nav">
+					<a targrt="_blank" href="http://www.51buycar.com" class="active">首页</a>
+					<a targrt="_blank" href="http://www.51buycar.com/sales/1">我要买车</a>
+					<a targrt="_blank" href="http://www.51buycar.com/sell.html">我要卖车</a>
+					<a targrt="_blank" href="">主题精选</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!--header end-->
+
+
+	<!--content start-->
+	<div class="content clearfix">
+	<!--main start-->
+	<main role="main" class="main">
+	<!--main-top start-->
+		<div class="main-top clearfix">
+			<div class="filter-nav">
+				<div class="filter-part car-brand clearfix">
+					<p class="filter-title">品牌</p>
+					<div id="brand-open"></div>
+					<div class="brand-list  clearfix" style="height: 45px;overflow: hidden">
+						<div class="brand-line clearfix">
+							<a href="#" class="brand-item">大众</a>
+							<a href="#" class="brand-item">丰田</a>
+							<a href="#" class="brand-item">本田</a>
+							<a href="#" class="brand-item">日产</a>
+							<a href="#" class="brand-item">福特</a>
+							<a href="#" class="brand-item">别克</a>
+							<a href="#" class="brand-item">现代</a>
+							<a href="#" class="brand-item">马自达</a>
+							<a href="#" class="brand-item">荣威</a>
+							<a href="#" class="brand-item">起亚</a>
+							<a href="#" class="brand-item">标志</a>
+							<a href="#" class="brand-item">雪佛兰</a>
+							<a href="#" class="brand-item">三菱</a>
+							<a href="#" class="brand-item">雪铁龙</a>
+							<a href="#" class="brand-item">斯柯达</a>
+							<a href="#" class="brand-item">沃尔沃</a>
+							<a href="#" class="brand-item">奥迪</a>
+							<a href="#" class="brand-item">宝马</a>
+							<a href="#" class="brand-item">奔驰</a>
+							<a href="#" class="brand-item">雷克萨斯</a>
+						</div>
+					</div>
+					<div class="brand-inner nav-inner hidden" style="z-index:99; width: 730; height: 446">
+						<div class="bard-conf clearfix">
+							<p class="filter-title">品牌</p>
+							<div class="brand-line clearfix">
+								<a href="#" class="brand-item">大众</a>
+								<a href="#" class="brand-item">丰田</a>
+								<a href="#" class="brand-item">本田</a>
+								<a href="#" class="brand-item">日产</a>
+								<a href="#" class="brand-item">福特</a>
+								<a href="#" class="brand-item">别克</a>
+								<a href="#" class="brand-item">现代</a>
+								<a href="#" class="brand-item">马自达</a>
+								<a href="#" class="brand-item">荣威</a>
+								<a href="#" class="brand-item">起亚</a>
+								<a href="#" class="brand-item">标志</a>
+								<a href="#" class="brand-item">雪佛兰</a>
+								<a href="#" class="brand-item">三菱</a>
+								<a href="#" class="brand-item">雪铁龙</a>
+								<a href="#" class="brand-item">斯柯达</a>
+								<a href="#" class="brand-item">沃尔沃</a>
+								<a href="#" class="brand-item">奥迪</a>
+								<a href="#" class="brand-item">宝马</a>
+								<a href="#" class="brand-item">奔驰</a>
+								<a href="#" class="brand-item">雷克萨斯</a>
+							</div>
+						</div>
+						<div class="brand-all">
+							<p class="filter-title">热销车型</p>
+							<div class="brand-list clearfix">
+								<div class="left-list">
+									<div class="brand-item-1 clearfix">
+										<div class="letter">大众</div>
+										<div class="brand-letter">
+											<a target="_blank" href="http://www.51buycar.com/sales/brand-614">朗逸</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-633">宝来</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-16">捷达</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-5001">桑塔纳</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-528">帕萨特</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-442">速腾</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-496">迈腾</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-874">途观</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-905">大众CC</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-871">高尔夫</a>	
+										</div>
+									</div>
+									<div class="brand-item-1 clearfix">
+										<div class="letter">别克</div>
+										<div class="brand-letter">
+											<a target="_blank" href="http://www.51buycar.com/sales/brand-164">君威</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-982">英朗</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-834">君越</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-875">凯越</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-166">GL8</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-2896">昂科拉</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-592">昂科雷</a>	
+										</div>
+									</div>
+									<div class="brand-item-1 clearfix">
+										<div class="letter">现代</div>
+										<div class="brand-letter">
+											<a target="_blank" href="http://www.51buycar.com/sales/brand-2764">朗动</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-3073">明图</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-1007">ix35</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-358">途胜</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-50">索纳塔</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-2115">瑞纳</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-586">悦动</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-431">雅绅特</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-51">伊兰特</a>
+										</div>
+									</div>
+									<div class="brand-item-1 clearfix">
+										<div class="letter">福特</div>
+										<div class="brand-letter">
+											<a target="_blank" href="http://www.51buycar.com/sales/brand-3175">致胜</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-2863">翼虎</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-364">福克斯</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-117">蒙迪欧</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-569">嘉年华</a>	
+										</div>
+									</div>
+									<div class="brand-item-1 clearfix">
+										<div class="letter">起亚</div>
+										<div class="brand-letter">
+											<a target="_blank" href="http://www.51buycar.com/sales/brand-2246">K5</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-2886">K3</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-2319">K2</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-2137">智跑</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-413">赛拉图</a>	
+										</div>
+									</div>
+									<div class="brand-item-1 clearfix">
+										<div class="letter">标志</div>
+										<div class="brand-letter">
+											<a target="_blank" href="http://www.51buycar.com/sales/brand-99">307</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-877">308</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-987">408</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-2299">508</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-3234">2008</a> 	
+										</div>
+									</div>
+									<div class="brand-item-1 clearfix">
+										<div class="letter">奥迪</div>
+										<div class="brand-letter">
+											<a target="_blank" href="http://www.51buycar.com/sales/brand-18">A6L</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-692">A4L</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-3170">A3</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-2951">Q5</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-812">Q3</a>	
+										</div>
+									</div>
+									<div class="brand-item-1 clearfix">
+										<div class="letter">宝马</div>
+										<div class="brand-letter">
+											<a target="_blank" href="http://www.51buycar.com/sales/brand-66">3系</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-65">5系</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-2561">X1</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-271">X3</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-159">X5</a>	
+										</div>
+									</div>
+									<div class="brand-item-1 clearfix">
+										<div class="letter">奔驰</div>
+										<div class="brand-letter">
+											<a target="_blank" href="http://www.51buycar.com/sales/brand-588">C级</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-197">E级</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-59">S级</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-2562">GLK级</a> 	
+										</div>
+									</div>
+								</div>
+								<div class="right-list">
+									<div class="brand-item-1 clearfix">
+										<div class="letter">丰田</div>
+										<div class="brand-letter">
+											<a target="_blank" href="http://www.51buycar.com/sales/brand-375">锐志</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-770">RAV4</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-505">雅力士</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-526">卡罗拉</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-110">凯美瑞</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-882">皇冠</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-111">威驰</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-109">花冠</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-771">汉兰达</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-46">普拉多</a> 
+										</div>
+									</div>
+									<div class="brand-item-1 clearfix">
+										<div class="letter">本田</div>
+										<div class="brand-letter">
+											<a target="_blank" href="http://www.51buycar.com/sales/brand-78">雅阁</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-135">思域</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-81">飞度</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-314">CRV</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-880">奥德赛</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-694">锋范</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-14">凌派</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-859">思铂睿</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-14">歌诗图</a>	
+										</div>
+									</div>
+									<div class="brand-item-1 clearfix">
+										<div class="letter">日产</div>
+										<div class="brand-letter">
+											<a target="_blank" href="http://www.51buycar.com/sales/brand-634">天籁</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-448">轩逸</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-64">阳光</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-522">骊威</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-564">逍客</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-425">骐达</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-656">奇骏</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-355">颐达</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-2381">楼兰</a>	
+										</div>
+									</div>
+									<div class="brand-item-1 clearfix">
+										<div class="letter">雪佛兰</div>
+										<div class="brand-letter">
+											<a target="_blank" href="http://www.51buycar.com/sales/brand-163">赛欧</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-439">乐风</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-657">科鲁兹</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-2583">科帕奇</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-2313">迈锐宝</a>	
+										</div>
+									</div>
+									<div class="brand-item-1 clearfix">
+										<div class="letter">斯柯达</div>
+										<div class="brand-letter">
+											<a target="_blank" href="http://www.51buycar.com/sales/brand-382">晶锐</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-519">明锐</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-3290">昕动</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-3171">速派</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-772">昊锐</a>
+	
+										</div>
+									</div>
+									<div class="brand-item-1 clearfix">
+										<div class="letter">马自达</div>
+										<div class="brand-letter">
+											<a target="_blank" href="http://www.51buycar.com/sales/brand-2418">星驰</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-655">睿翼</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-433">马自达2</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-363">马自达3</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-22">马自达6</a>	
+										</div>
+									</div>
+									<div class="brand-item-1 clearfix">
+										<div class="letter">雷克萨斯</div>
+										<div class="brand-letter">
+											<a target="_blank" href="http://www.51buycar.com/sales/brand-201">IS</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-403">ES</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-2063">CT</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-351">RX</a>
+				                            <a target="_blank" href="http://www.51buycar.com/sales/brand-261">GS</a>	
+										</div>
+									</div>
+									<div class="brand-item-1 clearfix">
+										<div class="letter">雷克萨斯</div>
+										<div class="brand-letter">
+											<a target="_blank" href="http://www.51buycar.com/sales/brand-70">沃尔沃</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-72">雪铁龙</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-65">斯巴鲁</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-68">三菱</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-60">讴歌</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-20">MG</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-56">Mini</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-46">Jeep</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-77">长城</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-19">荣威</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-26">奇瑞</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-120">宝骏</a>
+			                                <a target="_blank" href="http://www.51buycar.com/sales/brand-75">比亚迪</a>	
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="filter-part car-select-box">
+					<p class="filter-title">价格</p>
+					<div id="brand-open"></div>
+					<div class="filter-item">
+						<a href="#" class="price-item">8万以下</a>
+						<a href="#" class="price-item">8-12万</a>
+						<a href="#" class="price-item">12-18万</a>
+						<a href="#" class="price-item">18-24万</a>
+						<a href="#" class="price-item">24-35万</a>
+						<a href="#" class="price-item">35万以上</a>
+					</div>
+				</div>
+				<div class="filter-part car-select-box">
+					<p class="filter-title">里程</p>
+					<div id="brand-open"></div>
+					<div class="filter-item">
+						<a href="#" class="price-item">1万公里以内</a>
+						<a href="#" class="price-item">1-2万公里</a>
+						<a href="#" class="price-item">2-3万公里</a>
+						<a href="#" class="price-item">3-5万公里</a>
+						<a href="#" class="price-item">5-8万公里</a>
+					</div>
+				</div>
+				<div class="filter-part no-border car-select-box">
+					<p class="filter-title">车龄</p>
+					<div id="brand-open"></div>
+					<div class="filter-item">
+						<a href="#" class="price-item">1年以内</a>
+						<a href="#" class="price-item">1-2年</a>
+						<a href="#" class="price-item">2-3年</a>
+						<a href="#" class="price-item">3-5年</a>
+						<a href="#" class="price-item">5-8年</a>
+					</div>
+				</div>
+			</div>
+			<div class="main-slider">
+				
+
+				<div class="slider-img">
+					<ul  style="transition: all 1 ease-in-out;">
+						
+						<li><a href="#" target="_blank" ><img src="../img/1.jpg" alt="" style="transition: all 1 ease-in-out;"></a></li>
+						<li><a href="#" target="_blank" ><img src="../img/2.jpg" alt=""></a></li>
+						<li><a href="#" target="_blank" ><img src="../img/3.jpg" alt=""></a></li>
+						<li><a href="#" target="_blank" ><img src="../img/4.jpg" alt=""></a></li>
+						<li><a href="#" target="_blank" ><img src="../img/5.png" alt=""></a></li>
+						
+					</ul>
+					<div class="btnbg"></div>
+					<div class="slider-button">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+				    </div>
+				    <div class="pre-next pre"></div>
+				 	<div class="pre-next next"> </div>
+				 </div>
+				 
+
+
+			</div>
+		</div>
+		<!--main-top end-->
+
+		<!--main-body start-->
+		<nav role="category" class="carsnav clearfix">
+			<ul>
+				<li data-id="recarlists" class="category-nav"><a href="javascript:void(0);">为您推荐</a></li>
+				<li data-id="hotcarlists" class="category-nav active"><a href="javascript:void(0);">热门好车</a></li>
+				<li data-id="acarlists" class="category-nav"><a href="javascript:void(0);">准新车</a></li>
+				<li data-id="bcarlists" class="category-nav"><a href="javascript:void(0);">练手车</a></li>
+				<li data-id="suvcarlists" class="category-nav"><a href="javascript:void(0);">SUV</a></li>
+			</ul>
+		</nav>
+		<div class="cars-content hotnewcarcontent clearfix">
+			<div id="recarlists" class="cars-list hidden clearfix">
+				<div class="cars-item">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>123</em></a>
+						<a  class="views-num">收藏 <em>123</em></a>
+					</div>
+				</div>
+				<div class="cars-item">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>123</em></a>
+						<a  class="views-num">收藏 <em>123</em></a>
+					</div>
+				</div>
+				
+				<div class="cars-item">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>123</em></a>
+						<a  class="views-num">收藏 <em>123</em></a>
+					</div>
+				</div>
+				<div class="cars-item ">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>234</em></a>
+						<a  class="views-num">收藏 <em>234</em></a>
+					</div>
+				</div>
+			</div>
+			<div id="hotcarlists" class="cars-list clearfix">
+				<div class="cars-item">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>123</em></a>
+						<a  class="views-num">收藏 <em>123</em></a>
+					</div>
+				</div>
+				<div class="cars-item">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>123</em></a>
+						<a  class="views-num">收藏 <em>123</em></a>
+					</div>
+				</div>
+				
+				<div class="cars-item">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>123</em></a>
+						<a  class="views-num">收藏 <em>123</em></a>
+					</div>
+				</div>
+				<div class="cars-item ">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>234</em></a>
+						<a  class="views-num">收藏 <em>234</em></a>
+					</div>
+				</div>
+			</div>
+			<div id="acarlists" class="cars-list hidden clearfix">
+				<div class="cars-item">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>123</em></a>
+						<a  class="views-num">收藏 <em>123</em></a>
+					</div>
+				</div>
+				<div class="cars-item">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>123</em></a>
+						<a  class="views-num">收藏 <em>123</em></a>
+					</div>
+				</div>
+				
+				<div class="cars-item">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>123</em></a>
+						<a  class="views-num">收藏 <em>123</em></a>
+					</div>
+				</div>
+				<div class="cars-item ">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>234</em></a>
+						<a  class="views-num">收藏 <em>234</em></a>
+					</div>
+				</div>
+			</div>
+			<div id="bcarlists" class="cars-list hidden clearfix">
+				<div class="cars-item">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>123</em></a>
+						<a  class="views-num">收藏 <em>123</em></a>
+					</div>
+				</div>
+				<div class="cars-item">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>123</em></a>
+						<a  class="views-num">收藏 <em>123</em></a>
+					</div>
+				</div>
+				
+				<div class="cars-item">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>123</em></a>
+						<a  class="views-num">收藏 <em>123</em></a>
+					</div>
+				</div>
+				<div class="cars-item ">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>234</em></a>
+						<a  class="views-num">收藏 <em>234</em></a>
+					</div>
+				</div>
+			</div>
+			<div id="suvcarlists" class="cars-list hidden clearfix">
+				<div class="cars-item">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>123</em></a>
+						<a  class="views-num">收藏 <em>123</em></a>
+					</div>
+				</div>
+				<div class="cars-item">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>123</em></a>
+						<a  class="views-num">收藏 <em>123</em></a>
+					</div>
+				</div>
+				
+				<div class="cars-item">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">宝马5系 2011款 528Li 领先型</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>123</em></a>
+						<a  class="views-num">收藏 <em>123</em></a>
+					</div>
+				</div>
+				<div class="cars-item ">
+					<a class="item-cover" href="#"><img src="../img/1-300x200.jpg"/></a>
+					<a class="item-name" href="#">卡罗拉 2008款 1.8L 手动GL-i天窗特别版</a>
+					<div class="price-info">
+						<span class="price">￥34.55万</span>
+						<span class="reg_date">上牌：2011/09</span>
+					</div>
+					<div class="tags">
+						<span>亮点：GPS，定速巡航，经典直6，保养好</span>
+					</div>
+					<div class="index">
+						<a  class="favorite-num">关注 <em>234</em></a>
+						<a  class="views-num">收藏 <em>234</em></a>
+					</div>
+				</div>
+			</div>
+			<div class="cars-more">
+				<span>
+					<a href="http://www.51buycar.com/sale/1">查看更多</a>
+				</span>
+			</div>
+		</div>
+		<!--main-body end-->
+	</main>
+
+	<!--sidebar begin-->
+	<div class="sidebar">
+		<div class="hot-sell">
+			<div class="hot-title">
+				<span>HOT</span>
+				<em>本周热销排行榜</em>
+			</div>
+			<ul class="hot-list">
+				<li class="hot-item">
+					<span>1</span>
+					<a href="#">朗逸</a>
+					<i class="hot-state hot-rise"></i>
+				</li>
+				<li class="hot-item">
+					<span>2</span>
+					<a href="#">科鲁兹</a>
+					<i class="hot-state hot-rise"></i>
+				</li>
+				<li class="hot-item">
+					<span>3</span>
+					<a href="#">宝马3系</a>
+					<i class="hot-state hot-rise"></i>
+				</li>
+				<li class="hot-item">
+					<span>4</span>
+					<a href="#">奥迪A6L</a>
+					<i class="hot-state hot-rise"></i>
+				</li>
+				<li class="hot-item">
+					<span>5</span>
+					<a href="#">锐志</a>
+					<i class="hot-state hot-rise"></i>
+				</li>
+				<li class="hot-item">
+					<span>6</span>
+					<a href="#">凯美瑞</a>
+					<i class="hot-state hot-rise"></i>
+				</li>
+				<li class="hot-item">
+					<span>7</span>
+					<a href="#">帕萨特</a>
+					<i class="hot state hot-rise"></i>
+				</li>
+				<li class="hot-item">
+					<span>8</span>
+					<a href="#">轩逸</a>
+					<i class="hot-state hot-down"></i>
+				</li>
+				<li class="hot-item">
+					<span>9</span>
+					<a href="#">英朗</a>
+					<i class="hot-state hot-rise"></i>
+				</li>
+				<li class="hot-item">
+					<span>10</span>
+					<a href="#">奥迪A4L</a>
+					<i class="hot-state hot-down"></i>
+				</li>
+
+				
+			</ul>
+		</div>
+	</div>
+	<!--sidebar end-->
+
+	</div>
+	<!--content end-->
+
+
+	<!--footer start-->
+	<footer role="contentinfo" class="footer">
+		<span>Copyright &copy 2014  51BuyCar,All Rights Reserved<br/>
+
+		<a target="_blank href="#">沪ICP备 14027574-1 号</a>
+	    </span>
+	</footer>
+	<!--footer end-->
+	
+</body>
+<script type="text/javascript">
+
+jQuery(".main-slider").slide({
+    mainCell: ".slider-img ul",
+    autoPlay: true,
+    effect: "leftLoop"
+});
+
+$(document).ready(function(){
+	$(".car-brand").mouseover(function(){
+        $(".brand-inner").removeClass("hidden");
+    });
+    $(".car-brand").mouseout(function(){
+        $(".brand-inner").addClass("hidden");
+    });
+    $(".brand-letter a").mouseover(function(){
+        $(this).css({color:'##FF571A'});
+    });
+    $(".brand-letter a").mouseout(function(){
+        $(this).css({color:'#666'});
+    });
+
+
+    $(".category-nav").mouseover(function(){
+        $(".category-nav").removeClass("active");
+        $(this).addClass("active");
+        $(".cars-list").addClass("hidden");
+        $("#"+$(this).attr("data-id")).removeClass("hidden");
+    });
+
+});
+
+
+</script> 
+</html>

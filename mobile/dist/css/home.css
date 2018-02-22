@@ -1,0 +1,431 @@
+body{
+	font-size: 14px;
+	color: #1a1a1a;
+	margin: 0 auto;
+	background:rgb(245, 245, 245);
+	font-family: PingFangSC-Regular,Helvetica,Droid Sans,Arial,sans-serif;
+}
+.flex{
+	display: -webkit-flex;
+	display: flex;
+}
+.flex .flex-1{
+
+	-webkit-flex:1;
+	-moz-box-flex :1;
+}
+.fs-16{
+	font-size: 16px;
+}
+.masthead{
+	height:54px;
+	width: 100%;
+	box-sizing: border-box;
+	background: #fff;
+}
+
+.masthead .logo-div{
+	margin:auto 0 auto 16px;	
+}
+.masthead .search-div{
+	
+	padding: 10px 12px;
+}
+.search-input{
+	background-color: #f2f2f2;
+	color: #999;
+	height: 34px;
+	line-height: 34px;
+	border-radius: 20px;
+	position: relative;
+	display: flex;
+	-webkit-box-pack:center;
+	justify-content: center;
+	align-items: center;
+}
+.search-input i{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 6px;
+	background: url(search.png) no-repeat 50%;
+	background-size:contain;
+}
+.side-menu{
+ margin:auto 16px  auto 0;	
+
+}
+.co-menu{
+	height: 24px;
+	width: 24px;
+}
+.co-menu .menu-div{
+	height: 100%;
+	width: 100%;
+	background-image: url(xiala.png);
+	background-size: contain;
+}
+.mask{
+	position: fixed;
+	top:0;
+	right:0;               /*上下左右都设为0  占满整个页面*/
+	left:0;
+	bottom:0;
+	background:rgba(0,0,0,.4);
+	z-index:2;
+}
+.mask .row{
+	position: fixed;
+	top:0;
+	right: 0;
+	bottom:0;
+	height: 100%;
+	width: 60%;
+	background: #fff;
+	z-index: 3;
+
+}
+.mask .row .list{
+	padding: 0 0 0 16px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	color: #1a1a1a;
+}
+.mask .row a{
+	text-decoration: none;
+	color: #1a1a1a;
+
+}
+.mask .row a p{
+	height: 44px;
+	line-height: 44px;	
+
+}
+/*pg-index-search begin*/
+.pg-index-search{
+	background: #fff;
+}
+.pg-index-search.content-height{
+	height:100vh;
+}
+.pg-index-search .search-header{
+	height:54px;
+}
+.pg-index-search .search-header .search-wrapper{
+	position: relative;
+	padding: 10px 16px;
+}
+.form-wrapper{
+	background: #f2f2f2;
+	border-radius: 20px;
+}
+.pg-index-search .search-header .search-wrapper .car-type{
+	margin: 6px 0px 6px 16px;
+	height: 22px;
+	line-height: 22px;
+	padding-right: 12px;
+	border-right: 1px solid #d9d9d9;
+}
+.pg-index-search .search-header .search-wrapper .car-type img{
+	vertical-align: middle;
+	margin-left: 4px;
+}
+.pg-index-search .search-header  .search-input{
+	background: #f2f2f2;
+	border-radius: 20px;
+	height: 34px;
+	line-height: 34px;
+	position: relative;
+	margin-left: 12px;
+}
+.pg-index-search .search-header .search-input input{
+	background: transparent;
+	border:none;
+	outline:none;
+	border-radius: 20px;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	margin: auto 0;
+	z-index: 10;
+}
+.pg-index-search .search-header .cancel{
+	margin:auto 0 auto 16px;
+}
+.pg-index-search .search-list{
+	padding:14px 16px 6px;
+}
+.pg-index-search .search-list .list-header{
+	margin-bottom: 12px;
+}
+.text-gray{
+	color:#666 !important;
+}
+.pg-index-search .search-list .key-word-lable{
+	display: inline-block;
+	margin: 0 10px 10px 0;
+	border-radius: 20px;
+	background: #f2f2f2;
+	padding:6px 18px;
+}
+a:active, a:hover, a:link, a:visited{
+	color:#1a1a1a;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*pg-index-search end*/
+
+.swiper-container{
+	position: relative;
+	overflow: hidden;
+
+	height: 150px；
+
+
+}
+.swiper-container .swiper-wrapper{
+	width: 100%;
+	position: relative;
+	display: flex;
+	
+
+}
+.swiper-container .swiper-wrapper .swiper-slide{
+	flex-shrink: 0;
+	position: relative;
+	width: 100%;
+	background-size:auto 100%;
+	background-repeat: no-repeat;
+}
+.swiper-container .swiper-wrapper .swiper-slide img{
+	width: 100%;
+	vertical-align: bottom;
+}
+.select{
+	padding-top: 10px;
+	margin-bottom:12px;
+	background: #fff;
+	margin-bottom: 12px;
+	color: #1b1c33;
+	font-size: 13px;
+}
+.carbrand-items{
+	margin-top: 12px;
+	justify-content:space-around;
+}
+.carbrand-items .brand{
+	margin-top: -2px;
+	margin-left:2px;
+}
+.carprice-items{
+	margin-top: 20px;
+	justify-content:space-around;
+}
+.carprice-items p{
+	display: 
+}
+.all-list-btn{
+	margin:5px 0 12px;
+	text-align: center;
+}
+.all-list-btn span{
+	display: inline-block;
+	width: 126px;
+	height: 30px;
+	line-height: 28px;
+	color: #FF571A;
+	background: #fff9e6;
+	font-size: 13px;
+	position: relative;
+	border-radius: 15px;
+	box-sizing: border-box;
+	border: 1px solid #FF571A;
+	text-align: center;
+	margin-bottom: 12px;
+
+}
+.swiper-pagination{
+	position: absolute;
+	left:0;
+	bottom: 5px;
+
+	width: 100%;
+}
+.swiper-pagination-bullet {
+	display: inline-block;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color:#000;
+      opacity: 1;    
+      background: rgba(0,0,0,0.2);
+    }
+ .swiper-pagination-bullet-active {
+      color:#fff;
+      background:#fff;
+    }
+.list-title{
+	text-align: center;
+	font-size: 17px;
+	color: #141526;
+	padding: 15px 0;
+	background: #fff;
+}
+.cars-content{
+	background: #fff;
+	overflow: hidden;
+	border-bottom: 1px solid #eeeeee;
+	position: relative;
+	
+}
+.cars-content .cars-item{
+	width: 49.5%;
+	float: left;
+}
+.cars-content .cars-item:nth-child(odd){/*下标是奇数的cars-item子元素*/
+	margin-right:3px;
+
+}
+
+.cars-content .cars-item .item-cover{
+	width:calc(100% - 1px);	
+	height: 0;
+	padding-bottom: 75.2%;
+	position: relative;
+
+}
+.cars-content .cars-item .item-cover img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.cars-info{
+	padding: 4px 10px 17px 16px;
+	margin-top: -10px;
+}
+.item-name{
+	font-size:18px;
+	line-height: 15px;
+
+	color: #1b1c33;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: bold;
+	text-decoration-line: none;
+}
+.item-name p{
+	line-height: 20px;
+	font-size: 13px;
+	color: #5e5e66;
+	font-weight: normal;
+	margin: 0 auto;
+
+}
+.price-info{
+	position:relative;
+	display:block;
+	
+}	
+.price{
+	color:#FF4400;
+	font-weight: bold;
+	font-size: 14px;
+	margin-right: 25px;
+}
+.reg_date{
+	display: block;
+	font-size: 12px;
+	color:#8c8c8c;
+	line-height: 18px;
+}
+.tags{
+	font-size: 12px;
+	color:#999;
+	line-height: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;/*规定段落中的文本不进行换行*/
+	padding-bottom: 12px;
+}
+.index{
+	padding-top:12px;
+	border-top: 1px solid #eeeeee;
+	margin:0 auto;
+	position:relative;
+}
+.index .favorite-num{
+	background: url(../img/item-icons.gif) no-repeat;
+    padding-left: 20px;
+    position: relative;
+    color: #999;
+    background-position: 0px -3px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 15px;
+    float: right;
+    margin-left: 6px;
+}
+.index .views-num{
+    background: url(../img/item-icons.gif) no-repeat;
+    padding-left: 22px;
+    position: relative;
+    color: #999;
+    background-position: 0px -23px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 15px;
+    float: right;
+}
+.cars-more{
+	background-color:#fff;
+
+
+	text-align: center;
+	
+
+}
+.cars-more span a{
+	font-size: 13px;
+	color: #8d8e99;
+	line-height: 45px;
+	text-decoration-line: none;
+
+}
+
+.footer{
+	width:100%;
+	height:80px;
+
+	margin-top: 25px;
+	display: block;
+}
+.footer span{
+	text-align:right;
+	float:right;
+	margin:20px 30px 0 0 ;
+	color:#717171;
+	font-size: 12px;
+	font-family: 'Microsoft YaHei',Tahoma,Verdana;
+}
+.footer a{
+	color:#717171;
+
+}

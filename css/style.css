@@ -1,0 +1,388 @@
+
+/*main start*/
+.main {
+	width:1040px;
+	float:left;
+	display: block;
+	margin:0 auto;
+}
+.main-top{
+	width:1040px;
+	margin-bottom:20px;
+	margin-top: 20px;
+}
+.main-top .filter-nav{
+	height:304px;
+	width:360px;
+	float:left;
+	display:inline-block;
+	border:1px solid #E6E6E6;
+	background: #F5F5F5;
+	padding:15px;
+	position:relative;
+	z-index:1;
+
+}
+.car-brand{
+	border-bottom: 1px solid #E6E6E6;
+	position:relative;
+	z-index: 1;
+}
+.car-select-box{
+	position: relative;
+	margin-top: 15px;
+	border-bottom: 1px solid #E6E6E6;
+
+}
+.filter-item{
+	color: #666;
+	font-size:12px;
+	margin-bottom: 15px;
+	height:15px;
+	overflow: hidden;	
+}
+.brand-list{
+	color:#666;
+	font-size:12px;
+	margin-bottom:5px;
+	overflow: hidden;
+}
+.brand-inner{
+	position: absolute;
+	border: 1px solid #fc7000;
+	top:-16px;
+	left:-16px;
+	background: #fff;
+	padding:15px;
+}
+.brand-inner .brand-line{
+	color:#666;
+	font-size: 12px;
+	width: 410px;
+}
+.no-border{
+	border-bottom:0px;
+}
+.filter-title{
+	color:#333;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+.left-list{
+	float: left;
+	margin-right: 10px;
+}
+.right-list{
+	float:right;
+}
+.brand-list .brand-item-1{
+	margin-bottom: 10px;
+	width: 350px
+}
+.brand-list .brand-item-1 .letter{
+	color:#fc7000;
+	font-weight: bold;
+	font-size: 14;
+	float:left;
+	width: 80px;
+	text-align: center;
+}
+.brand-list .brand-item-1 .brand-letter{
+	float: left;
+	width: 266px;
+}
+.brand-list .brand-item-1 .brand-letter a{
+	float: left;
+	color: #666;
+	font-size: 12px;
+	font-family:  "Microsoft YaHei",Tahoma,Verdana;
+	margin-right: 6px;
+	line-height: 18px;
+	width: 46px;
+}
+.brand-item{
+	display:inline-block;
+	margin-right: 15px;
+	margin-bottom: 10px;
+	float:left;
+}
+.price-item{
+	margin-right: 12px;
+	display:block;
+	float:left;
+}
+.main-slider{
+	position: relative;
+	float:left;
+	width: 610px;
+	height: 335px;
+	margin-left:18px;
+	overflow: hidden;
+}
+.main-top .slider-img{
+	width:612px;
+	height:335px;
+	border:none;
+	float:left;
+}
+.pre-next{
+	width: 45px;
+	height: 100px;
+	position: absolute;
+	top:120px;
+	background: url(../sprite.png) no-repeat 0 0;
+	opacity: 0.2;
+	cursor: pointer;
+}
+.pre-next.next{
+	right:0;
+	background-position: right top;
+}
+.btnbg{
+	opacity: 0.5;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 612px;
+	height: 20px;
+	background: #000;
+}
+.slider-button{
+	position: absolute;
+	right: 0;
+	bottom:0;
+	width: 600px;
+	height: 10px;
+	padding: 8px 10px;
+	text-align: right;
+}
+.slider-button span{
+	opacity: 0.4;
+	display: inline-block;
+	width: 25px;
+	height: 10px;
+	margin-left: 5px;
+	cursor: pointer;
+	background: #fff;
+}
+.carsnav{
+	width:97.8%;
+	position:relative;
+	height:40px;
+	background:#F5F5F5;
+	border:1px solid #E6E6E6;
+}
+.carsnav li{
+	cursor:pointer;
+	display:inline-block;
+	float:left;
+	padding:10px 15px;
+	font-size: 15px;
+	color:#666666;
+	height:20px;
+	border-bottom:1px solid #E6E6E6;
+}
+.carsnav .active{
+	color:#ff571a;
+	background:#fff;
+	font-weight: bold;
+	border-right:1px solid #E6E6E6;
+	border-bottom: 1px solid #fff;
+	height:20px;
+}
+.carsnav .active a{
+	color:#ff571a;
+}
+.cars-content{
+	width:100%;
+	position:relative;
+	min-height: 390px;
+	overflow: hidden;
+	border-right: 1px solid #EDEDED;
+}
+.cars-content .cars-item{
+	overflow: hidden;
+	position:relative;
+	width:228px;
+	margin-top: 19px;
+	margin-right: 13px;
+	float:left;
+	border:1px solid #EDEDED;
+}
+.cars-item .item-cover{
+	position: relative;
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+	display: block;
+}
+.cars-item .item-cover img{
+	border:none;
+	position:none;
+	position:absolute;
+	width:100%;
+	top:0px;
+	left:0px;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+.item-name{
+	font-size: 14px;
+	margin:12px 16px 0px 16px;
+	height:40px;
+	overflow:hidden;
+	display:block;
+	color:#333;
+}
+.price-info{
+	margin:5px 16px 0px 16px;
+	position:relative;
+	display:block;
+	
+}	
+.price{
+	color:#FF4400;
+	font-weight: bold;
+	font-size: 14px;
+	margin-right: 25px;
+}
+.reg_date{
+	font-size: 12px;
+	position:absolute;
+	right:0px;
+	color:#8c8c8c;
+	line-height: 18px;
+}
+.tags{
+	display:block;
+	font-size: 12px;
+	color:#999;
+	line-height: 20px;
+	overflow: hidden;
+	height:40px;
+	margin:7px 16px 0px 16px;
+	padding-bottom: 12px;
+}
+.index{
+	width:206px;
+	height:26px;
+	padding-top:12px;
+	border-top: 1px solid #eeeeee;
+	margin:0 auto;
+	position:relative;
+}
+.index .favorite-num{
+	background: url(../img/item-icons.gif) no-repeat;
+    padding-left: 20px;
+    position: relative;
+    color: #999;
+    background-position: 0px -3px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 15px;
+    float: right;
+    margin-left: 6px;
+}
+.index .views-num{
+    background: url(../img/item-icons.gif) no-repeat;
+    padding-left: 22px;
+    position: relative;
+    color: #999;
+    background-position: 0px -23px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 15px;
+    float: right;
+}
+.cars-more{
+	margin-top: 20px;
+	padding:10px 0;
+	text-align: center;
+	position:relative;
+	height:20px;
+	background:#F5F5F5;
+	border:1px solid #E6E6E6;
+	font-size:15px;
+	cursor:pointer;
+
+}
+
+.hot-sell{
+	width:208px;
+	height:340px;
+	padding:15px;
+	background:#fff;
+}
+.hot-title{
+	margin:10px 0;
+	font-size: 16px;
+}
+.hot-title span{
+	color: #ff571a;
+	font-weight: bold;
+	margin-right: 10px;
+}
+.hot-title em{
+	color:#333;
+	font-weight: bold;
+}
+.hot-list{
+	margin-top:20px;
+	font-size: 13px；
+
+}
+.hot-list li{
+	margin-bottom: 10px;
+}
+.hot-item span{
+	color:#ff571a;
+	font-weight: bold;
+	width:25px;
+	display:block;
+	float:left;
+}
+.hot-item a{
+	color:#8c8c8c;
+
+}
+ .hot-list li i {
+    display: block;
+    float: right;
+    width: 6px;
+    height: 1px;
+    background: #BFBFBF;
+    margin-top: 5px;
+    margin-right: 2px;
+}
+
+.hot-list i{
+	display:block;
+	float:right;
+}
+
+.hot-list li .hot-rise{
+	width:0px;
+	height:0px;
+	border-left:4px solid transparent;
+	border-right:4px solid transparent;
+	border-bottom:4px solid #FF571a;
+	background: #fff;
+	margin-right:0px;
+
+}
+.hot-list li .hot-down{
+	width:0px;
+	height:0px;
+	border-left:4px solid transparent;
+	border-right:4px solid transparent;
+	border-bottom:4px solid #BFBFBF;
+	background: #fff;
+	margin-right:0px;
+	}
+
+
+
+
+
+

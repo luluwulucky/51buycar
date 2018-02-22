@@ -1,0 +1,410 @@
+body{
+	background-color: #f2f2f2;
+}
+.choose{
+    width: 100%;
+    margin-top: 15px;
+    zoom:1;
+
+}
+.choose-condition{
+    width: 795px;
+    height:38px;
+    line-height: 38px;
+    border:1px solid #ddd;
+    background: #fff;
+    float:left;
+    display:inline;
+    overflow: hidden;
+
+}
+.choose-condition p {
+    color: #333;
+    font-size: 14px;
+    font-family: "\5FAE\8F6F\96C5\9ED1",Tahoma,Verdana;
+    padding-left: 15px;
+    float: left;
+    padding-right: 5px;
+}
+.wrapper{
+	width:1000px;
+	margin:0 auto;
+	zoom:1;
+}
+.orderby{
+	margin-left:0px;
+	float:right;
+	height:38px;
+	line-height: 38px;
+	border:1px solid #ddd;
+
+	border-right:none;
+	background-color: #fff;
+}
+.order-item{
+	float:left;
+	display:block;
+	border-right: 1px solid #ddd;
+	padding:0 15px;
+
+}
+.order-active{
+	color:#e70;
+}
+.order-item{
+	float:left;
+	display:block;
+	border-right: 1px solid #ddd;
+
+}
+.orderby span{
+	float: right;
+	width:9px;
+	height:12px;
+	background:url(img/inside_sprite3.png) no-repeat -45px 0;
+	margin:13px 0 0 4px;
+
+}
+#list-wrap{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	position:relative;
+}
+#list-wrap .nav-container{
+	width:263px;
+	position:relative;
+	float:left;
+}
+#list-wrap .list-nav{
+	width:263px;
+	border-bottom: 1px solid #e4e4e4;
+	border-top: 1px solid #e4e4e4;
+	float:left;
+	display:inline;
+	position: relative;
+	z-index: 10;
+}
+.list-nav-contain{
+	width:259px;
+	padding-bottom: 50px;
+	background: #fff;
+	margin-left:2px;
+	height: auto;
+}
+.list-nav-wrap{
+	margin-left: 15px;
+	font-size: 14px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+#list_wrap .list_nav .list_nav_wrap ul li a {
+    color: #666;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+#list-wrap .list-nav .nav-brand{
+	position: relative;
+	border:1px solid #fff;
+	border-right: none;
+	padding-bottom: 10px;
+	padding-left: 2px;
+	margin-left: 10px;
+	height: 190px;
+	border-bottom: 1px solid #e0e0e0;
+}
+.list-nav-title{
+	color:#333;
+	width:230px;
+	line-height: 36px;
+	padding-top: 10px;
+}
+.list-nav-title span{
+	float:left;
+	width: 50px;
+	font-size: 14px;
+
+}
+.nav-list-more {
+	float:right;
+	color:#666;
+	font-size: 12px;
+	cursor:pointer;
+}
+#list-wrap .find-all{
+	width:280px;
+
+}
+ ul li{
+	float:left;
+	display:inline;
+	width:60px;
+	color:#666;
+	line-height:1.8em;
+	white-space:nowrap;
+	overflow: hidden;
+
+}
+.nav-price{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e4e4e4;
+	position: relative;
+
+}
+.list-nav-title em{
+	color:#333;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal; 
+}
+.price-src{
+	width: 100%;
+	height: 25px;
+	margin-top: 15px;
+
+}
+.unlimited{
+	position:absolute;
+	top:70px;
+	right:0px;
+	font-size: 12px;
+	color:#8c8c8c;
+}
+.price-src .price-range{
+	float:left;
+	width: 35px;
+	height:25px;
+	margin-right:3px;
+}
+.price-src .price-range span{
+	font-size: 12px;
+	color: #8c8c8c;
+	display:block;
+	margin-left:-10;
+}
+.price-src .price-range i{
+	width:35px;
+	background-color: #d9d9d9;
+	height:8px;
+	display:block;
+	cursor:pointer;
+}
+.sc-option{
+	width: 228px;
+	display: inline-block;
+	border: 1px solid #d9d9d9;
+	height: 25px;
+	background: #fff;
+	line-height: 25px;
+	position:relative;
+}
+.sc-option-hd{
+	text-align: left;
+	padding-left: 10px;
+	color:#aaa;
+	font-weight: normal;
+}
+.sc-option-content{
+	cursor: pointer;
+}
+.sc-option-action{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	background: #d9d9d9;
+	cursor: pointer;
+	font-size: 0;
+	line-height: 0;
+}
+.sc-option-action i{
+	margin-left: 8px;
+	margin-top: 10px;
+	display: block;
+	width: 0;
+	height: 0;
+	border: 5px solid;
+	border-color: #555 #d9d9d9 #d9d9d9 #d9d9d9;
+	cursor:pointer;
+	font-size: 0;
+	line-height: 0;
+}
+.sc-option-list{
+	width: 100%;
+	border: 1px solid #d9d9d9;
+	position: absolute;
+	left: -1px;
+	overflow: auto;
+	z-index: 10000;
+	overflow-x:hidden;
+	display:none;
+}
+
+.sc-option-list li{
+	float:none;
+	display:block;
+	width: 100%;
+	line-height: 1.8em;
+	white-space: nowrap;
+	background: #fff;
+}
+.nav-type ul{
+	width: 280px;
+}
+.nav-type ul li{
+	width: 85px;
+	float: left;
+	color: #666;
+	line-height: 1.8em;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#list-wrap .list-nav .list-nav-wrap ul li a{
+	color:#666;
+	font-size:12px;
+}
+#list-wrap .list-main{
+	width: 720px;
+	float: left;
+	margin-left: 15px;
+}
+.list-content{
+	margin-bottom: 20px;
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	position: relative;
+}
+.list-content-img{
+	display:block;
+	float:left;
+	width: 325px;
+	height:214px;
+	overflow: hidden;
+}
+.list-content img{
+	width:325px;
+	height: 215px;
+}
+.list-content-carsinfo{
+	float: left;
+	margin-left: 24px;
+	padding-top: 20px;
+	width: 345px;
+	position:relative;
+
+}
+.list-content-carsinfo h1{
+	font-family: "\5FAE\8F6F\96C5\9ED1",Tahoma,Verdana;
+	line-height: 1.5em;
+	height:25px;
+	overflow: hidden;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.list-content-carsinfo h1 a{
+	color: #333;
+
+}
+.list-content-carsinfo h1 a:hover{
+	color:#e70;
+}  
+.list-content-carsinfo h1 a:visited {
+	color:#800080;
+
+}
+
+.list-content-price{
+	margin-bottom: 10px;
+}
+
+.list-content-price div{
+	text-align: center;
+	color: #888;
+	font-size: 16px;
+	width: 172px;
+	height:34px;
+	line-height: 34px;
+	background: #f2f2f2;
+	font-family: "\5FAE\8F6F\96C5\9ED1",Tahoma,Verdana;
+	float:left;
+}
+.list-content-price .list-content-price-new{
+	background:#e70;
+	color:#fff;
+	font-size: 24px;
+	
+}	
+.list-content-other{
+	margin-bottom: 5px;
+	color:#333；
+}
+.list-content-other div{
+	height:25px;
+	line-height: 25px;
+	text-align: center;
+	float:left;
+	border-left: 1px solid #d9d9d9;
+	margin-left: 20px;
+	padding-left: 15px;
+	font-size: 14px;
+	font-family: "\5FAE\8F6F\96C5\9ED1",Tahoma,Verdana;
+    font-size: 14px;
+}
+.list-content-action{
+	height:20px;
+	margin:12px 0 6px;
+	color:#666;
+}
+.blue-a{
+	color:#fff;
+	padding:2px;
+	margin-right: 6px;
+	background: #2b99ff;
+}
+.orange-a{
+	color:#fff;
+	padding:2px;
+	margin-right: 6px;
+	background: #9c0;
+
+}
+.list-content-service div{
+	color:#666;
+	height:25px;
+	line-height: 25px;
+	float:left;
+	margin-right: 25px;
+
+}
+.list-content-service span{
+	float:left;
+	width:12px;
+	height:12px;
+	background: url(img/service-icon.png) no-repeat;
+	margin-top: 7px;
+	margin-right: 3px;
+}
+
+
+.car-tag-zhijian{
+	left:5px;
+	right:auto;
+	top:5px;
+	width: 34px;
+	height:46px;
+	position: absolute;
+	background: url(img/tag_sprite.png) no-repeat 0 -50px;
+	color: #e70;
+	font-size: 14px;
+	text-align: center;
+	line-height: 56px;
+	font-style: normal;
+	font-family: Arial;
+}
+.top-ad{
+	height:470px;
+	width: 100%;
+	background: url(img/tbuycar-topad.jpg) no-repeat center top;
+}

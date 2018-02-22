@@ -1,0 +1,274 @@
+.detail-wrap{
+	margin-bottom:50px;
+	position: relative;
+
+}
+.detail-wrap .detail-photogallary{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+
+}
+.detail-wrap .detail-photogallary .photoswrap{
+	display: flex;
+	width: 100%;
+	position: relative;
+
+}
+.detail-wrap .detail-photogallary .photoswrap .photo-wrap{
+	width: 100%;
+	flex-shrink: 0;
+}
+.detail-wrap .detail-photogallary .photoswrap .photo-wrap img{
+	width: 100%;
+}
+.photo-more {
+	width: 100%;
+	position: absolute;
+	font-size: 12px;
+	z-index: 5;
+	text-align: left;
+	bottom: 14px;
+	color: #fff;
+	padding: 0px 16px;	
+}
+.photo-more .number{
+	line-height: 1;
+	margin-bottom: 3px;
+}
+.photo-more .postname{
+	float: right;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 0px 20px;
+	border-radius: 10px;
+	text-align: left;
+}
+.photo-more .postname i{
+	color: #ff751a;
+}
+.car-info{
+	padding: 12px 0px 1px 16px;
+	background: #fff;
+	margin-bottom: 12px;
+
+}
+.car-info .part-1{
+	
+	background: #fff;
+	margin-bottom: 9px;
+}
+
+.car-info .car-name{
+	margin-bottom:5px;
+
+	
+}
+.fs-18{
+	font-size: 18px;
+}
+.car-info h1 ins{
+	font-weight: bolder;
+}
+.detail-price{
+
+	margin-bottom: 12px;
+	display: flex;
+	-wekit-box-align:center;
+	text-align:center;
+	justify-content: space-between;
+	text-align: left;
+
+
+}
+.detail-price .detail-price-left{
+	width: 30%;
+	
+	border-right: 1px solid #e4e3e3;
+}
+.detail-price .detail-price-left .price{
+	font-size: 18px;
+	margin-bottom: 6px;
+}
+.reduce{
+	color: #f35b00;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+.car-detail{
+	margin-bottom: 9px;
+}
+.text-gray{
+	color:#8d8e99!important;
+}
+.fs-12{
+	font-size: 12px; 
+}
+.sp-line{
+	display: inline-block;
+	height: 10px;
+	margin: 0 4px;
+	position: relative;
+	top: 1px;
+}
+.lineheight-1{
+	line-height: 1;
+}
+.price-others{
+
+}
+.price-others {
+	line-height: 14px;
+	background-color: #fff9e6;
+	vertical-align:middle;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    -webkit-box-align: center; 
+
+}
+.price-others i{
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	background:url(icon-fenqi.png) no-repeat center center;
+	margin-right: 10px;
+}
+
+.more-info{
+background: #fff;
+margin-bottom: 12px;
+}
+ 
+.co-sticky{
+	position: sticky;
+	top:0;
+	z-index: 11;
+	width: 100%;
+}
+.more-info .sticky-tabs{
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	webkit-box-pack:justify;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    height: 48px;
+    position: relative;
+    line-height: 46px;
+    font-size: 16px;
+    color: #666;
+}
+.more-info .sticky-tabs li{
+	text-align: center;
+	height: 50px;
+	width: 33.33%;
+	padding: 0 16px;
+	box-sizing: border-box;
+	
+
+}
+.more-info .sticky-tabs li div{
+	border-bottom: 2px solid #fff;
+}
+.more-info .sticky-tabs li.active{
+	color: #191919;
+	font-weight: 600;
+}
+.more-info .sticky-tabs li.active div{
+	border-bottom: 2px solid #ff751a;
+
+}
+.car-info-1{
+	padding:32px 0;
+}
+.co-car-used-tab-info .info1{
+	padding: 0 26px;
+	margin-bottom: 38px;
+}
+.co-car-used-tab-info  .title-line{
+	margin-bottom: 23px;
+	text-align: center;
+	-webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 16px;
+    color: #999;
+}
+.co-car-used-tab-info .middle-line{
+	height: 12px;
+	color: #f2f2f2;
+}
+.cell-list{
+	display: webit-box;
+	display: ms-flexbox;
+	display: flex;
+	-webkit-box-pack:justify;
+	ms-flex-pack:justify;
+	justify-content: space-between;
+	webkit-box-align:start;
+	ms-flex-align:start;
+	align-items: flex-start;
+	font-size: 13px;
+	padding:15px 0;
+	position: relative;
+}
+.cell-list .key{
+	color: #5e5e66;
+	width: 25%;
+	margin-right: 8px;
+}
+.cell-list .value{
+	width: 68%;
+	color: #1a1d33;
+	text-align: right;
+}
+.detail-car-photos img{
+	width: 100%;
+	margin-bottom: 12px;
+}
+
+	
+
+.m-order{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width:100%;
+	display: flex;
+	z-index: 11;
+	height: 50px;
+}
+.m-order .bottom-btn{
+	display: flex;
+	justify-content: space-around;
+	width: 50%;
+	color: #191919;
+	position: relative;
+	background: #fff;
+	text-align: center;
+	font-size: 10px;
+}
+.m-order .bottom-btn .flex-1{
+	webkit-box-flex:1;
+	box-flex:1;
+	justify-content: space-around;
+	padding-top: 5px;
+}
+
+.m-order .order{
+	width: 50%;
+	font-size: 16px;
+	color: #191919;
+	line-height: 50px;
+	font-weight: 600;
+	background:#ff751a; 
+	text-align: center;
+}

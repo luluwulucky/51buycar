@@ -1,0 +1,430 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<html lang="en">
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/common.css"/>
+	<link rel="stylesheet" href="css/sell.css"/>
+	<script src="Js/jquery1.42.min.js"></script>
+    <script src="Js/jquery.SuperSlide.2.1.1.js"></script>
+
+</head>
+<body>
+<script>
+	$(document).ready(function(){
+    $("#search-text").focus(function(){
+        if($(this).val() == '搜索你想要的车'){
+            $(this).val('');
+        }
+    });
+    $("#search-text").blur(function(){
+        if($(this).val() == ''){
+            $(this).val('搜索你想要的车');
+        }
+    });
+});
+</script>
+
+	<!--header start*/-->
+	<header class="header">
+		<div class="wrapper">
+			<a href="/" class="logo"><img src="img/logo-new.png"/></a>
+			<div class="search" >
+				<form class="index-search" action="http://www.51buycar.com" method="GET">
+					<input type="text" name="search_text" id="search-text" value="搜索你想要的车" class="search_text"/>
+					
+					
+					<div class="options">
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-5015?word=宝马">宝马</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/suv?word=宝马">SUV</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-375?word=锐志">锐志</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-657?word=科鲁兹">科鲁兹</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-982?word=英朗">英朗</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-614?word=朗逸">朗逸</a>
+					</div>
+				
+					<button type="submit" class="search-submit">
+						<i></i>
+					</button>
+				</form>
+			</div>
+		</div>
+		<nav class="nav">
+			<div class="wrapper clearfix">
+				<div class="main-nav">
+					<a targrt="_blank" href="http://www.51buycar.com" class="active">首页</a>
+					<a targrt="_blank" href="http://www.51buycar.com/sales/1">我要买车</a>
+					<a targrt="_blank" href="http://www.51buycar.com/sell.html">我要卖车</a>
+					<a targrt="_blank" href="">主题精选</a>
+			</div>
+		</nav>
+	</header>
+	<div class="top-ad">
+		
+	</div>
+	<div class="sellcar-main">
+		<div class="sellcar-main-tad">
+			<ul>
+				<li id="li1" class="">
+					<a href="javascript" logwt="pc_mc_sy_wm" _islog="1"><i class="first"></i>拍卖</a>
+				</li>
+				<li id="li2" class="">
+					<a href="javascript" logwt="pc_mc_sy_wm" _islog="1"><i class="second"></i>个人网上卖车</a>
+				</li>
+				<li id="li3" class="">
+					<a href="javascript" logwt="pc_mc_sy_wm" _islog="1"><i class="third"></i>我的车辆管理</a>
+				</li>
+			</ul>
+		</div>
+		<div id="tab2" class="tab2 sellcar-enrol" >
+			<div class="sellcar-enrol-left">
+				<div class="sellcar-enrol-tit">请完善您的资料，我们会在第一时间联系您</div>
+				<div class="form-sm">
+					<div class="form-group clearfix" style="z-index:10;">
+						<lable class="form-name">您的车型</lable>
+						<div class="form-col clearfix">
+							<div id="carSelect2" data-color="1" class="form-checked form-w405">
+								<span>选择车型</span>
+								<div class="form-arrow"><em></em></div>
+							</div>
+
+							<!--carSelect2_master 一级下拉菜单-->
+							<div class="form-popover type-popover clearfix" id="carSelect2_master" style="display: none;">
+								<div class="form-popover-tit">
+									<ul class="form-popover-name">
+										<li><a href="javascript:void(0)">品牌</a><i></i></li>	
+									</ul>
+								</div>
+								<div class="form-popover-main">
+									<div class="form-popover-1" id="carSelect2_master_letters">
+										<div class="on" data-char="A"><a href="javascript:;">A</a></div>
+										<div class data-char="B"><a href="javascript:;">B</a></div>
+										<div class data-char="C"><a href="javascript:;">C</a></div>
+										<div class data-char="D"><a href="javascript:;">D</a></div>
+										<div class data-char="E"><a href="javascript:;">E</a></div>
+										<div class data-char="F"><a href="javascript:;">F</a></div>
+										<div class data-char="G"><a href="javascript:;">G</a></div>
+										<div class data-char="H"><a href="javascript:;">H</a></div>
+										<div class data-char="I"><a href="javascript:;">I</a></div>
+										<div class data-char="J"><a href="javascript:;">J</a></div>
+										<div class data-char="K"><a href="javascript:;">K</a></div>
+										<div class data-char="L"><a href="javascript:;">L</a></div>
+										<div class data-char="M"><a href="javascript:;">M</a></div>
+										<div class data-char="N"><a href="javascript:;">N</a></div>
+										<div class data-char="O"><a href="javascript:;">O</a></div>
+										<div class data-char="P"><a href="javascript:;">P</a></div>
+										<div class data-char="Q"><a href="javascript:;">Q</a></div>
+										<div class data-char="R"><a href="javascript:;">R</a></div>
+										<div class data-char="S"><a href="javascript:;">S</a></div>
+										<div class data-char="T"><a href="javascript:;">T</a></div>
+										<div class data-char="U"><a href="javascript:;">U</a></div>
+										<div class data-char="V"><a href="javascript:;">V</a></div>
+										<div class data-char="W"><a href="javascript:;">W</a></div>
+										<div class data-char="X"><a href="javascript:;">X</a></div>
+										<div class data-char="Y"><a href="javascript:;">Y</a></div>
+										<div class data-char="Z"><a href="javascript:;">z</a></div>
+									</div>
+									<div class="form-popover-r" id="carSelect2_master_lists">
+										<div class="form-popover-text">
+											<div class="form-popover-p" id="carSelect2_letters_A">
+												<h4 class="first">A</h4>
+
+												<p><a href="javascript:;" data-id="33" data-allspell title="奥迪">A 奥迪</a> </p>
+												<p><a href="javascript:;" data-id="34" data-allspell title="阿尔法·罗密欧">A 阿尔法·罗密欧</a></p>
+												<p><a href="javascript:;" data-id="35" data-allspell title="阿斯顿·马丁">A 阿斯顿·马丁</a></p>
+											</div>
+											<div class="form-popover-p" id="carSelect2_letters_B">
+												<h4 class="first">B</h4>
+												<p><a href="javascript:;" data-id="36" data-allspell title="奔驰">B 奔驰</a></p>
+												<p><a href="javascript:;" data-id="15" data-allspell title="宝马">B 宝马</a></p>
+												<p><a href="javascript:;" data-id="14" data-allspell title="本田">B 本田</a></p>
+												<p><a href="javascript:;" data-id="38" data-allspell title="别克">B 别克</a></p>
+												<p><a href="javascript:;" data-id="39" data-allspell title="宾利">B 宾利</a></p>
+												<p><a href="javascript:;" data-id="40" data-allspell title="保时捷">B 保时捷</a></p>
+												<p><a href="javascript:;" data-id="95" data-allspell title="奔腾">B 奔腾</a></p>
+												<p><a href="javascript:;" data-id="27" data-allspell title="北京汽车">B 北京汽车</a></p>
+											</div>
+											<div class="form-popover-p" id="carSelect2_letters_C">
+												<h4 class="first">C</h4>
+												<p><a href="javascript:;" data-id="77" data-allspell title="长城">C 长城</a></p>
+												<p><a href="javascript:;" data-id="76" data-allspell title="长安">C 长安</a></p>
+												<p><a href="javascript:;" data-id="79" data-allspell title="昌河">C 昌河</a></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--carSelect2_master 一级下拉菜单end-->
+
+							<!--carSelect2_serial 二级下拉菜单-->
+							<div class="form-popover clearfix" style="display: none;" id="carSelect2_serial" >
+							
+								<div class="form-popover-tit">
+									<ul class="form-popover-name">
+										<li><a href="javascript:void(0)">品牌</a><i></i></li>
+										<li class="arrow-r">></li>
+										<li class="current">车系</li>
+									</ul>
+								</div>
+								<div class="form-popover-down " id="carSelect2_serial_list" > 
+							   		
+						  		</div>
+							</div>
+							<!--carSelect2_serial 二级下拉菜单end-->
+
+							<!--carSelect2_cartype 三级下拉菜单-->
+							<div class="form-popover clearfix" style="display: none;" id="carSelect2_cartype" >
+								<div class="form-popover-tit">
+									<ul class="form-popover-name">
+										<li><a href="javascript:void(0)">品牌</a><i></i></li>
+										<li class="arrow-r">></li>
+										<li class="current">车系</li>
+										<li class="arrow-r">></li>
+										<li class="current">车型</li>
+									</ul>
+								</div>
+								<div class="form-popover-down" id="carSelect2_cartype_list" > 
+							   		
+						  		</div>
+							</div>
+							<!--carSelect2_cartype 三级下拉菜单end-->
+						</div>
+					</div>
+					<!--上牌时间-->
+					<div class="form-group clearfix" style="">
+						<lable class="form-name">上牌时间</lable>
+						<div class="form-col clearfix">
+							<div id="dateSelect2" data-color="1" class="form-checked form-w205" >
+								<span>选择上牌时间</span>
+								<div class="form-arrow"><em></em></div>
+							</div>	
+						</div>
+						<div class="form-popover time-popover" style="display: none;" id="dateSelect2_dateselect">
+							<div class="form-popover-year">
+								<div class="form-popover-year-text form-height" id="dateSelect2_yearlist">
+									<p><a href="javascript:;" data="2018">2018年</a></p>
+									<p><a href="javascript:;" data="2017">2017年</a></p>
+									<p><a href="javascript:;" data="2016">2016年</a></p>
+									<p><a href="javascript:;" data="2015">2015年</a></p>
+									<p><a href="javascript:;" data="2014">2014年</a></p>
+									<p><a href="javascript:;" data="2013">2013年</a></p>
+									<p><a href="javascript:;" data="2012">2012年</a></p>
+									<p><a href="javascript:;" data="2011">2011年</a></p>
+									<p><a href="javascript:;" data="2010">2010年</a></p>
+									<p><a href="javascript:;" data="2009">2009年</a></p>
+									<p><a href="javascript:;" data="2008">2008年</a></p>
+									<p><a href="javascript:;" data="2007">2007年</a></p>
+									<p><a href="javascript:;" data="2006">2006年</a></p>
+									<p><a href="javascript:;" data="2005">2005年</a></p>
+									<p><a href="javascript:;" data="2004">2004年</a></p>
+									<p><a href="javascript:;" data="2003">2003年</a></p>
+									<p><a href="javascript:;" data="2002">2002年</a></p>
+									<p><a href="javascript:;" data="2001">2001年</a></p>
+									<p><a href="javascript:;" data="2000">2000年</a></p>	
+									<p><a href="javascript:;" data="1999">1999年</a></p>	
+									<p><a href="javascript:;" data="1998">1998年</a></p>	
+								</div>
+							</div>
+							<div class="form-height" id="dateSelect2_monthist">
+								<p><a href="javascript:;" data="1月">1月</a></p>
+								<p><a href="javascript:;" data="2月">2月</a></p>
+								<p><a href="javascript:;" data="3月">3月</a></p>
+								<p><a href="javascript:;" data="4月">4月</a></p>
+								<p><a href="javascript:;" data="5月">5月</a></p>
+								<p><a href="javascript:;" data="6月">6月</a></p>
+								<p><a href="javascript:;" data="7月">7月</a></p>
+								<p><a href="javascript:;" data="8月">8月</a></p>
+								<p><a href="javascript:;" data="9月">9月</a></p>
+								<p><a href="javascript:;" data="10月">10月</a></p>
+								<p><a href="javascript:;" data="11月">11月</a></p>
+								<p><a href="javascript:;" data="12月">12月</a></p>
+								
+							</div>
+							
+						</div>
+					</div>
+					<!--上牌时间end-->
+					<!--手机号-->
+					<div class="form-group clearfix">
+						<lable class="form-name">手机号</lable>
+						<div class="form-col" style="">
+							<input type="text" id="textPhone2" name="textPhone2" autocomplete="off" height="40px;" class="form-input form-w205" placeholder="请输入您的手机号"/>
+						</div>
+						<div class="form-sellcar-error" style="display: none">
+							<i></i>
+							<div class="form-sellcar-error-text" >
+								<em></em>请输入手机号
+							</div>
+						</div>
+
+					</div>
+					<!--手机号end-->
+				</div>
+				<div class="sellcar-enrol-but">
+					<span class="btn">
+						<a id="sub" href="javascript:;">提交</a>
+					</span>
+				</div>
+			</div>
+			<div class="sellcar-success" style="display: none;">
+				<div class="success-icon"></div>
+				<h1>您的车辆已提交成功</h1>
+
+			</div>
+		</div>
+		
+	</div>
+
+<footer role="contentinfo" class="footer">
+	<span >Copyright &copy 2014  51BuyCar,All Rights Reserved<br/>
+
+	<a target="_blank" href="">沪ICP备 14027574-1 号</a>
+    </span>
+</footer>
+</body>
+	
+<script type="text/javascript">
+$(document).ready(function(){
+	/*$("#carSelect2").click(function(){
+		//$(".type-popover").show();
+	});
+	$("#li1").click(function(){
+		$("#tab1").show();
+		$("#tab2").hide();
+		$("#tab3").hide();
+	});
+	$("#li2").click(function(){
+		$("#tab1").hide();
+		$("#tab2").show();
+		$("#tab3").hide();
+	});
+	$("#li1").click(function(){
+		$("#tab1").hide();
+		$("#tab2").hide();
+		$("#tab3").show();
+	});*/
+});
+</script>
+
+<script type="text/javascript">
+	var _data;
+$(document).ready(function(){
+
+	var dateSelect_year = '';
+
+	$("body").click(function(){
+		$(".form-popover").hide();
+	});
+
+	$("#carSelect2").click(function(){
+		$("#dateSelect2_dateselect").hide();
+		$("#carSelect2_master").toggle();
+		event.stopPropagation();
+	});
+	$("#carSelect2_master_letters div a").click(function(){
+		
+		$("#carSelect2_master_letters div").removeClass("on");
+		$(this).parent().addClass("on");	
+		event.stopPropagation();
+	})
+
+	$("#dateSelect2").click(function(){
+		$("#dateSelect2_dateselect").toggle();
+		event.stopPropagation();
+	});
+
+	$("#dateSelect2_yearlist p a").click(function(){
+		$("#dateSelect2_yearlist p a").css("color", "#444");
+		$(this).css("color", "#ff9a1f");
+		dateSelect_year = $(this).text();
+		event.stopPropagation();
+	});
+	
+
+	$("#dateSelect2_monthist p a").click(function(){
+		$("#dateSelect2_monthist p a").css("color", "#444");
+		$(this).css("color", "#ff9a1f");
+		$("#dateSelect2 span").text(dateSelect_year + $(this).text());
+	});
+
+	$("div[id^='carSelect2_letters_'] p a").click(function(){
+		$("#carSelect2 span").text($(this).text());
+		$("#carSelect2_master").hide();
+		$("#carSelect2_serial").show();
+
+		 brand_id=$(this).attr("data-id");
+
+		$.get("api/index.php?action=get_models&brand_id="+brand_id, {action:"get_models",brand_id:brand_id}, function(models){
+
+			$("#carSelect2_serial_list").empty();
+
+			for (var company_id in models){
+				var parent = models[company_id];
+				var html = "<div class=\"form-popover-p\"><h4 class=\"first\">"+parent.name+"</h4>";
+				for(var key in parent.items){
+					html += "<p><a href=\"javascript:;\" data-id=\""+parent.items[key].id+"\" data-allspell=\"\" title=\""+parent.items[key].model_name+"\">"+parent.items[key].model_name+"</a></p>";
+				}
+				$("#carSelect2_serial_list").append(html + "</div>");
+			}
+		}, 'json');
+
+
+		event.stopPropagation();
+	});
+
+	$("#carSelect2_serial_list p a").live("click",function(){
+
+	});
+
+	$("#carSelect2_serial_list p a").live("click",function(){
+		$("#carSelect2 span").text($(this).text());
+		
+		$("#carSelect2_serial").hide();
+		$("#carSelect2_cartype").show();
+		 model_id=$(this).attr("data-id");
+
+		$.get("api/index.php?action=get_items&model_id="+model_id,function(items){
+			
+			$("#carSelect2_cartype_list").empty();
+			var text="<div class=\"form-popover-p\">";
+			
+			for(var item_id in items){
+				text +="<p><a href=\"javascript:;\" data-id=\""+items[item_id].id+"\" title=\""+items[item_id].item_name+"\">"+items[item_id].item_name+"</a></p>";
+			}
+			$("#carSelect2_cartype_list").append(text+"</div>");
+			
+		}, 'json');
+
+		event.stopPropagation();
+	});
+	
+	$("#carSelect2_cartype_list p a").live("click",function(){
+		$("#carSelect2 span").text($(this).text());
+		item_id=$(this).attr("data-id");
+		car_name=$(this).attr("title");
+		event.stopPropagation();
+	});
+
+	$("#sub").click(function(){
+		var mobile = $("#textPhone2").val();
+		
+
+		if( /^1[34578]\d{9}$/.test(mobile) ){
+			$.get("api/index.php?action=save-sell&brand_id="+brand_id+"&model_id="+model_id+"&item_id="+item_id+"&mobile="+mobile+"&car-name="+car_name,function(data){
+				$(".sellcar-success").show();
+			})
+		}else{
+			$(".form-sellcar-error").show();
+		}
+
+		event.stopPropagation();
+	});
+
+
+
+
+
+});
+</script>
+</html>

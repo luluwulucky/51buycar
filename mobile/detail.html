@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,minimal-ui,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" viewport-fit="cover"/>
+	<html lang="en">
+	<link rel="stylesheet" href="dist/css/reset.css">
+	<link rel="stylesheet" href="dist/css/home.css?version=1.1">
+	<link rel="stylesheet" href="dist/css/detail.css">
+	<link rel="stylesheet" href="dist/css/swiper.css">
+	<script src="dist/js/jquery1.42.min.js"></script>
+	<script src="dist/js/swiper.js"></script>
+</head>
+<body>
+		<header class="masthead flex" role="banner">
+			<a href="/" class="logo-div"><img src="../img/logo-new.png" width="80" /></a>
+			<div class="search-div flex-1">
+				
+				<div class="search-input">
+				<i></i>
+				搜索你想要的车
+				</div>
+			</div>
+			<script>
+				$(document).ready(function(){
+					$(".co-menu").click(function(){
+						$(".mask").show();
+					});
+
+				})
+			</script>
+			
+			
+			<div class="co-menu side-menu">
+				<div class="menu-div"></div>
+				<div class="mask-menu" style="display: none;">
+					<div class="mask">
+						<div class="row">
+							<div class="list">
+								<a href="#"><p>首页</p></a>
+								<a href="#"><p>我要买车</p></a>
+								<a href="#"><p>我要卖车</p></a>
+								
+							</div>
+						</div>>
+					</div>
+				</div>
+			</div>
+			
+
+		</header>
+		<main>
+			<div id="detail-main" class="detail-wrap clearfix">
+			<div class="detail-photogallary">
+				<div  class="photoswrap">
+					<div class="photo-wrap photo-active" id="photo-wrap-0"><img src="../img/14.jpg" /></div>
+					<div class="photo-wrap" id="photo-wrap-1"><img src="../img/24.jpg"/></div>
+					<div class="photo-wrap" id="photo-wrap-2"><img src="../img/33.jpg"/></div>
+					<div class="photo-wrap" id="photo-wrap-3"><img src="../img/43.jpg"/></div>
+					<div class="photo-wrap" id="photo-wrap-4"><img src="../img/54.jpg"/></div>
+				</div>
+				<div class="photo-more">
+					<div class="number">/5</div>
+					<div class="postname">车源编号&nbsp;<i>100021</i></div>
+				</div>
+			</div>
+
+			<div class="car-info">
+				<div class="part-1">
+					<div class="car-name fs-18">
+						<h1><ins>途观 2010款 1.8TSI 自动两驱都会版</ins></h1>
+					</div>
+					<div class="car-detail text-gray fs-12 lineheight-1 ">
+						2010-09-25
+						<span class="sp-line"></span>7.68万公里
+						<span class="sp-line"></span>上海
+					</div>
+					<div class="detail-price clearfix">
+						<div class="detail-price-left">
+							<div class="price">17.76万</div>
+							<lable class="fs-12 text-gray">含过户费</lable>
+						</div>
+						<div class="detail-price-right">
+							<div class="reduce">为您节省5.24万</div>
+							<lable class="new fs-12 text-gray">新&nbsp;车&nbsp;价 21.19万+1.81万(购置税)</lable>
+						</div>
+
+					</div>
+					<div class="price-others text-gray">
+					     <i class="fenqi"></i>	
+						首付5.33万，月供3665万
+				</div>
+				</div>
+			
+				
+			</div>	
+			<div class="more-info">
+				<div class="co-sticky">
+					<ul class="sticky-tabs">
+						<li class="active"><div>车辆信息</div></li>
+						<li><div>详细配置</div></li>
+					</ul>
+				</div>
+				<div class="tab-content">
+					<div id="tabContent1" class="car-info-1">
+						<div class="co-car-used-tab-info">
+							<div class="info1">
+								<div class="title-line">
+									车辆档案
+								</div>
+								<div class="cell-list">
+									<div class="key">表显里程</div>
+									<div class="value">7.68万公里</div>
+								</div>
+								<div class="cell-list">
+									<div class="key">初次上牌</div>
+									<div class="value">1010年9月</div>
+								</div>
+								<div class="cell-list">
+									<div class="key">所在地</div>
+									<div class="value">上海</div>
+								</div>
+								<div class="cell-list">
+									<div class="key">排放标准</div>
+									<div class="value">国IV国(V)</div>
+								</div>
+								<div class="cell-list">
+									<div class="key">变速箱</div>
+									<div class="value">6挡手自一体</div>
+								</div>
+								<div class="cell-list">
+									<div class="key">排量</div>
+									<div class="value">1798(ml)</div>
+								</div>
+							</div>
+							<div class="middle-line"></div>
+							<div class="certificate info4">
+								<div class="title-line">
+									无忧认证
+								</div>
+								<div class="items">
+									<div class="certificate-">
+								</div>
+
+							</div>
+							<div class="middle-line"></div>
+							<div class="info3">
+								<div class="title-line">
+									车辆图片
+								</div>
+								<div class="detail-car-photos">
+									<img src="../img/14.jpg" width="100%"/>
+									<img src="../img/24.jpg"/>
+									<img src="../img/33.jpg"/>
+									<img src="../img/43.jpg"/>
+									<img src="../img/54.jpg"/>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div id="tabContent2" >
+					</div>
+				</div>
+			</div>
+		
+		</main>
+		<div class="m-order">
+			<div class="box-flex bottom-btn">
+				<div class="flex-1">
+					<img src="dist/css/fav-btn.png" width="24" alt="收藏"/>
+					<div class="text-gray">收藏</div>
+				</div>
+				<div class="flex-1 phone">
+					<img src="dist/css/phone.png" width="24" alt="联系我们"/>
+					<div class="text-gray">联系我们</div>
+				</div>
+
+			</div>
+			<div class="order">预约看车</div>
+		</div>
+		
+
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+
+});
+</script>
+</html>

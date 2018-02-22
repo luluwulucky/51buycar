@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width,minimal-ui,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" viewport-fit="cover"/>
+	
+	<link rel="stylesheet" href="dist/css/reset.css">
+	<link rel="stylesheet" href="dist/css/home.css?version=1.1">
+	<link rel="stylesheet" href="dist/css/list.css">
+	<link rel="stylesheet" href="dist/css/swiper.css">
+	<script src="dist/js/jquery1.42.min.js"></script>
+	<script src="dist/js/swiper.js"></script>
+</head>
+<body>
+	<div class="pg-list-index" style="height:auto;">
+		<header class="masthead flex" role="banner">
+			<a href="/" class="logo-div"><img src="../img/logo-new.png" width="80" /></a>
+			<div class="search-div flex-1">
+				
+				<div class="search-input">
+				<i></i>
+				搜索你想要的车
+				</div>
+			</div>
+			
+			<div class="co-menu side-menu">
+				<div class="menu-div"></div>
+				<div class="mask-menu" style="display: none;">
+					<div class="mask">
+						<div class="row">
+							<div class="list">
+								<a href="#"><p>首页</p></a>
+								<a href="#"><p>我要买车</p></a>
+								<a href="#"><p>我要卖车</p></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="filter-content">
+				<div class="co-list-filter">
+					<div class="menu">
+						<div class="filter-item">
+							<span class="brand">品牌</span>
+							<i class="icon"></i>
+						</div>
+						<div class="filter-item">
+							<span>价格</span>
+							<i class="icon"></i>
+						</div>
+						<div class="filter-item">
+							<span>车龄</span>
+							<i class="icon"></i>
+						</div>
+						<div class="filter-item">
+							<span>里程</span>
+							<i class="icon"></i>
+						</div>
+						<div class="filter-item">
+							<span>车型</span>
+							<i class="icon"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="brand-filter" style="display:none;">
+				<div class="brand-header">
+					<img src="../img/zhankai.png" class="back"/>
+					<span>选择品牌车型</span>
+				</div>
+				<div class="some-car-selector">
+					<ul class="car-content">
+						<li>
+							<div class="section entire-country">*</div>
+							<div class="inner-list">
+								<span>不限品牌</span>
+							</div>
+						</li>
+						<li>
+							<div class="section">A</div>
+							<div class="inner-list">
+								<img src="http://img.souche.com/files/tangeche/Fcs7NHo0cp.png" alt="">
+								<span>奥迪</span>
+							</div>
+							<div class="inner-list">
+								<img src="http://img.souche.com/files/tangeche/taus4ey1tQ.png" alt="">
+								<span>阿尔法罗密欧</span>
+							</div>
+						</li>
+						<li>
+						    <div class="section">
+						      B
+						    </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/ZK44gHG2hF.png" alt="" />
+					      <span>保时捷</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/n7s5lnUKD9.png" alt="" />
+					      <span>别克</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/XvMPKRU916.png" alt="" />
+					      <span>北京汽车</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/2zMZPwkriv.png" alt="" />
+					      <span>奔腾</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/pbKe6ALC2Z.png" alt="" />
+					      <span>奔驰</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/Z8QntMRakL.png" alt="" />
+					      <span>宝沃</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/se4CGU1icU.png" alt="" />
+					      <span>宝马</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/QU4w7CeF31.png" alt="" />
+					      <span>宝骏</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/4NMdX1NErQ.png" alt="" />
+					      <span>本田</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/Ay8uVvsuPA.png" alt="" />
+					      <span>标致</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/GCKgPNizjk.png" alt="" />
+					      <span>比亚迪</span>
+					     </div></li>
+					    <li>
+					     <div class="section">
+					      C
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/k7gZIDTHVE.png" alt="" />
+					      <span>长安</span>
+					     </div></li>
+					    <li>
+					     <div class="section">
+					      D
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/WPMPQ3JcwN.png" alt="" />
+					      <span>DS</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/j1QnBnHcc5.png" alt="" />
+					      <span>东南</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/8v48sBtLgj.png" alt="" />
+					      <span>东风风度</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/ePAxQRnjt7.png" alt="" />
+					      <span>东风风神</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/V1uYw3dt9C.png" alt="" />
+					      <span>东风风行</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/lMQ7DAjvSF.png" alt="" />
+					      <span>大众</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/upa2Y15ybk.png" alt="" />
+					      <span>道奇</span>
+					     </div></li>
+					    <li>
+					     <div class="section">
+					      F
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/GGKgBIoaRg.png" alt="" />
+					      <span>丰田</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/4V8qf0BDNQ.png" alt="" />
+					      <span>福特</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/a6MJZerwi8.png" alt="" />
+					      <span>菲亚特</span>
+					     </div></li>
+					    <li>
+					     <div class="section">
+					      G
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/OU80kTufNy.png" alt="" />
+					      <span>广汽传祺</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/t0gp270C0s.png" alt="" />
+					      <span>观致</span>
+					     </div></li>
+					    <li>
+					     <div class="section">
+					      H
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/tzamqNcFUt.png" alt="" />
+					      <span>哈弗</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/D0ctdB2m5E.png" alt="" />
+					      <span>海马</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/Vr8MSlBQhk.png" alt="" />
+					      <span>红旗</span>
+					     </div></li>
+					    <li>
+					     <div class="section">
+					      J
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/64cNLCWnCO.png" alt="" />
+					      <span>Jeep</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/mo6j4smf5S.png" alt="" />
+					      <span>吉利汽车</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/5DwjB7YXeb.png" alt="" />
+					      <span>捷豹</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/2rKQFQ2po7.png" alt="" />
+					      <span>江淮</span>
+					     </div></li>
+					    <li>
+					     <div class="section">
+					      K
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/Mc8gyQoDjJ.png" alt="" />
+					      <span>克莱斯勒</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/OecrivfTtX.png" alt="" />
+					      <span>凯迪拉克</span>
+					     </div></li>
+					    <li>
+					     <div class="section">
+					      L
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/1LgzpONT6F.png" alt="" />
+					      <span>林肯</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/YVAHBlvBfr.png" alt="" />
+					      <span>猎豹汽车</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/JDAxuGQF9r.png" alt="" />
+					      <span>理念</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/xsuUgp34wn.png" alt="" />
+					      <span>路虎</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/tQuKp7lG3h.png" alt="" />
+					      <span>铃木</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/AbOwCSCmWa.png" alt="" />
+					      <span>陆风</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/BlMLCs3MkW.png" alt="" />
+					      <span>雷克萨斯</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/CJMNrz043K.png" alt="" />
+					      <span>雷诺</span>
+					     </div></li>
+					    <li>
+					     <div class="section">
+					      M
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/tzg5K4SeOJ.png" alt="" />
+					      <span>MG</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/VkAlMfXAWf.png" alt="" />
+					      <span>MINI</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/4JqqMuZF2X.png" alt="" />
+					      <span>马自达</span>
+					     </div></li>
+					    <li>
+					     <div class="section">
+					      N
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/d08gYIWeM0.png" alt="" />
+					      <span>纳智捷</span>
+					     </div></li>
+					    <li>
+					     <div class="section">
+					      O
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/brand-114-GOQpiMl1EE.png" alt="" />
+					      <span>欧宝</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/bxwxkqJ2O8.png" alt="" />
+					      <span>讴歌</span>
+					     </div></li>
+					    <li>
+					     <div class="section">
+					      Q
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/i4a40ivO9a.png" alt="" />
+					      <span>启辰</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/V0QXVnCLCy.png" alt="" />
+					      <span>奇瑞</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/lowjHQ8BOs.png" alt="" />
+					      <span>起亚</span>
+					     </div></li>
+					    <li>
+					     <div class="section">
+					      R
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/oXqQfOLA7x.png" alt="" />
+					      <span>日产</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/r9QL1ahNVo.png" alt="" />
+					      <span>荣威</span>
+					     </div></li>
+					    <li>
+					     <div class="section">
+					      S
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/XRKiiP3BUc.png" alt="" />
+					      <span>smart</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/EUgnLFf9ea.png" alt="" />
+					      <span>三菱</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/HV6HGQfeFg.png" alt="" />
+					      <span>思铭</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/u7q4SUReRX.png" alt="" />
+					      <span>斯巴鲁</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/68c1L866lY.png" alt="" />
+					      <span>斯柯达</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/7DwvpDMsxm.png" alt="" />
+					      <span>绅宝</span>
+					     </div></li>
+					    <li>
+					     <div class="section">
+					      W
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/xgA5BnLAAi.png" alt="" />
+					      <span>沃尔沃</span>
+					     </div></li>
+					    <li>
+					     <div class="section">
+					      X
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/7VOQCwvHJ1.png" alt="" />
+					      <span>现代</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/TD8si8cV40.png" alt="" />
+					      <span>雪佛兰</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/h8u6r3RUOn.png" alt="" />
+					      <span>雪铁龙</span>
+					     </div></li>
+					    <li>
+					     <div class="section">
+					      Y
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/5Rs7xXYDij.png" alt="" />
+					      <span>英菲尼迪</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/lg4kjsh3Gg.png" alt="" />
+					      <span>野马汽车</span>
+					     </div></li>
+					    <li>
+					     <div class="section">
+					      Z
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/FQgfRvjwH4.png" alt="" />
+					      <span>中华</span>
+					     </div>
+					     <div class="inner-list">
+					      <img src="http://img.souche.com/files/tangeche/tReQknwhfV.png" alt="" />
+					      <span>众泰</span>
+					     </div></li>
+					   </ul>
+					   <ul class="level2 "  style="display:none">
+					    <li class="level2-title "> </li>
+					    <div class="scroll-list">
+					     <li class="series-list">
+					      <section>
+					       <div class="section">
+					        车系
+					       </div>
+					       <div class="all inner-list">
+					        <span>不限车系</span>
+					       </div>
+					      </section>
+					      <div>
+					       <div class="section">
+					        一汽-大众奥迪
+					       </div>
+					       <div class="inner-list">
+					        <span>奥迪A3</span>
+					       </div>
+					       <div class="inner-list">
+					        <span>奥迪A4L</span>
+					       </div>
+					       <div class="inner-list">
+					        <span>奥迪A6L</span>
+					       </div>
+					       <div class="inner-list">
+					        <span>奥迪Q3</span>
+					       </div>
+					       <div class="inner-list">
+					        <span>奥迪Q5</span>
+					       </div>
+					      </div>
+					      <div>
+					       <div class="section">
+					        奥迪(进口)
+					       </div>
+					       <div class="inner-list">
+					        <span>奥迪A1</span>
+					       </div>
+					       <div class="inner-list">
+					        <span>奥迪A3(进口)</span>
+					       </div>
+					       <div class="inner-list">
+					        <span>奥迪A4(进口)</span>
+					       </div>
+					       <div class="inner-list">
+					        <span>奥迪A5</span>
+					       </div>
+					       <div class="inner-list">
+					        <span>奥迪A7</span>
+					       </div>
+					       <div class="inner-list">
+					        <span>奥迪Q3(进口)</span>
+					       </div>
+					       <div class="inner-list">
+					        <span>奥迪Q5(进口)</span>
+					       </div>
+					       <div class="inner-list">
+					        <span>奥迪S3</span>
+					       </div>
+					       <div class="inner-list">
+					        <span>奥迪TT</span>
+					       </div>
+					       <div class="inner-list">
+					        <span>奥迪TTS</span>
+					       </div>
+					      </div></li>
+					    </div>
+					   </ul>
+					   <ul class="letterList" style="color:#ff751a;">
+					    <li> * </li>
+					    <li> A </li>
+					    <li> B </li>
+					    <li> C </li>
+					    <li> D </li>
+					    <li> F </li>
+					    <li> G </li>
+					    <li> H </li>
+					    <li> J </li>
+					    <li> K </li>
+					    <li> L </li>
+					    <li> M </li>
+					    <li> N </li>
+					    <li> O </li>
+					    <li> Q </li>
+					    <li> R </li>
+					    <li> S </li>
+					    <li> W </li>
+					    <li> X </li>
+					    <li> Y </li>
+					    <li> Z </li>
+					</ul>
+					<ul class="level2"></ul>
+					<ul class="LetterList"></ul>
+				</div>
+			</div>
+			<div class="car-list">
+				<div class="inner-content" style="transform: translateY(0px);">
+					<div class="car-list-content">
+						<ul>
+							<li class="co-list-used-car-item">
+								<a href="http://www.51buycar.com/detail.html" target="_blank">
+									<div class="car-item flex">
+										<div class="car-img">
+											<img src="../img/1-300x200.jpg" width="100%" height="100%" class="oss-img" src="" lazy="loaded"/>
+										</div>
+										<div class="car-info flex-1">
+											<div class="title">宝马五系</div>
+											<div class="model-name">2011款 528Li 领先型</div>
+											<div class="extra-info">上海<span></span>2011年09月<span></span>6.41万公里</div>
+											<div class="text-primary price"><span><b>首付10.37万</b></span><span>月供7131元</span></div>
+
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="co-list-used-car-item">
+								<a href="http://www.51buycar.com/detail.html" target="_blank">
+									<div class="car-item flex">
+										<div class="car-img">
+											<img src="../img/1-300x200.jpg" width="100%" height="100%" class="oss-img" src="" lazy="loaded"/>
+										</div>
+										<div class="car-info flex-1">
+											<div class="title">宝马五系</div>
+											<div class="model-name">2011款 528Li 领先型</div>
+											<div class="extra-info">上海<span></span>2011年09月<span></span>6.41万公里</div>
+											<div class="text-primary price"><span><b>首付10.37万</b></span><span>月供7131元</span></div>
+
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="co-list-used-car-item">
+								<a href="http://www.51buycar.com/detail.html" target="_blank">
+									<div class="car-item flex">
+										<div class="car-img">
+											<img src="../img/1-300x200.jpg" width="100%" height="100%" class="oss-img" src="" lazy="loaded"/>
+										</div>
+										<div class="car-info flex-1">
+											<div class="title">宝马五系</div>
+											<div class="model-name">2011款 528Li 领先型</div>
+											<div class="extra-info">上海<span></span>2011年09月<span></span>6.41万公里</div>
+											<div class="text-primary price"><span><b>首付10.37万</b></span><span>月供7131元</span></div>
+
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="co-list-used-car-item">
+								<a href="http://www.51buycar.com/detail.html" target="_blank">
+									<div class="car-item flex">
+										<div class="car-img">
+											<img src="../img/1-300x200.jpg" width="100%" height="100%" class="oss-img" src="" lazy="loaded"/>
+										</div>
+										<div class="car-info flex-1">
+											<div class="title">宝马五系</div>
+											<div class="model-name">2011款 528Li 领先型</div>
+											<div class="extra-info">上海<span></span>2011年09月<span></span>6.41万公里</div>
+											<div class="text-primary price"><span><b>首付10.37万</b></span><span>月供7131元</span></div>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="co-list-used-car-item">
+								<a href="http://www.51buycar.com/detail.html" target="_blank">
+									<div class="car-item flex">
+										<div class="car-img">
+											<img src="../img/1-300x200.jpg" width="100%" height="100%" class="oss-img" src="" lazy="loaded"/>
+										</div>
+										<div class="car-info flex-1">
+											<div class="title">宝马五系</div>
+											<div class="model-name">2011款 528Li 领先型</div>
+											<div class="extra-info">上海<span></span>2011年09月<span></span>6.41万公里</div>
+											<div class="text-primary price"><span><b>首付10.37万</b></span><span>月供7131元</span></div>
+
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="co-list-used-car-item">
+								<a href="http://www.51buycar.com/detail.html" target="_blank">
+									<div class="car-item flex">
+										<div class="car-img">
+											<img src="../img/1-300x200.jpg" width="100%" height="100%" class="oss-img" src="" lazy="loaded"/>
+										</div>
+										<div class="car-info flex-1">
+											<div class="title">宝马五系</div>
+											<div class="model-name">2011款 528Li 领先型</div>
+											<div class="extra-info">上海<span></span>2011年09月<span></span>6.41万公里</div>
+											<div class="text-primary price"><span><b>首付10.37万</b></span><span>月供7131元</span></div>
+
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+</body>	
+<script>
+$(document).ready(function(){
+	$(".mask-menu").click(function(){
+		$(this).hide();
+	});
+	$(".menu-div").click(function(){
+		$(".mask-menu").show();
+	});
+	$(".brand").click(function(){
+		$(".brand-filter").show();	
+	});
+	$(".back").click(function(){
+		$(".brand-filter").hide();	
+	});
+
+})
+</script>
+</html>

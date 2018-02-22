@@ -1,0 +1,229 @@
+.filter-content{
+	position: relative;
+}
+.menu{
+	display:flex;
+	justify-content: space-between;
+	background-color:#fff;
+	align-items: center;
+	font-size:13px;
+	height: 44px;
+	position: relative;
+	box-sizing: border-box;
+	padding: 0 16px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.menu .filter-item{
+	width: 20%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.menu .filter-item span{
+	display: block;
+	margin-right: 5px;
+}
+.menu .filter-item .icon{
+	width: 8px;
+	height: 8px;
+	background: url(jiao.png) no-repeat;
+	background-size:contain;
+}
+/*brand-filter  begin*/
+.pg-list-index .brand-filter{
+	width: 100%;
+	height:100%;
+	position: fixed;
+	left:0;
+	top:0;
+	z-index: 200;
+}
+.pg-list-index .brand-header{
+	font-size: 18px;
+	line-height: 54px;
+	text-align: center;
+	position: relative;
+	background: #fff;
+}
+.pg-list-index .brand-header img{
+	position: absolute;
+	width: 12px;
+	top: 14px;
+	left:12px;
+}
+.some-car-selector{
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	background: #fff;
+	position: relative;
+}
+.some-car-selector .car-content{
+	position: absolute;
+	top: 0;
+	left:0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	overflow-y: scroll;
+	margin-right: 32px;
+	padding-bottom: 150px;	
+}
+.some-car-selector .section{
+	font-size: 12px;
+	background-color:#f2f2f2;
+	color: #666;
+	line-height:28px;
+	padding: 0 16px;
+}
+.some-car-selector .car-content .inner-list{
+	padding: 12px 16px;
+	display: webkit-box;
+	display: ms-flexbox;
+	display: flex;
+	webkit-box-align:center;
+	ms-flex-align:center;
+	align-items:center;
+}
+.some-car-selector .car-content .inner-list img{
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+.some-car-selector .letterList{
+	font-size: 12px;
+	background: #fff;
+	position:fixed;
+	top: 50%;
+	right:0;
+	webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	width: 32px;
+	text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*brand-filter  end*/
+
+.car-list{
+	background: #fff;
+}
+
+.car-list-content{
+	padding-left: 16px;
+}
+.co-list-used-car-item{
+	padding: 16px 0 11px;
+	position: relative;
+	border-bottom: 1px solid #e6e6e6;
+}
+.flex{
+	display: webkit-flex;
+	display: flex;
+}
+.co-list-used-car-item .car-img{
+	overflow: hidden;
+	width: 112px;
+	height: 84px;
+	position: relative;
+	border-radius: 4px;
+}
+.co-list-used-car-item .car-info{
+	line-height: 1;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin: -2px 12px 0px;
+}
+.flex-1{
+	webkit-flex:1;
+	flex:1;
+}
+.co-list-used-car-item .car-info .title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 15px;
+	line-height: 15px;
+	margin-bottom: 6px;
+	font-weight: 700;
+}
+.co-list-used-car-item .car-info .model-name{
+	margin-bottom: 12px;
+	font-size:15px;
+	font-weight:700;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.co-list-used-car-item .car-info .extra-info{
+	margin-bottom: 12px;
+	font-size: 13px;
+	color: #8d8e99;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.co-list-used-car-item .car-info .extra-info span{
+	margin: 0 8px;
+	display: inline-block;
+	height: 9px;
+	width: 1px;
+	background: url(fenge.png) no-repeat 50%;
+}
+.co-list-used-car-item .car-info .price{
+	margin-bottom: 8px;
+}
+.text-primary{
+	color: #ff4d30 !important;
+}
+.co-list-used-car-item .car-info .price span{
+	margin-right:8px;
+	font-weight: normal;
+}

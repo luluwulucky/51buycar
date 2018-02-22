@@ -1,0 +1,736 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<html lang="en">
+	<link rel="stylesheet" href="../css/reset.css"/>
+	<link rel="stylesheet" href="../css/style.css"/>
+	<link rel="stylesheet" href="../css/detail.css"/>
+	<link rel="stylesheet" href="../css/common.css"/>
+	<script src="../Js/jquery1.42.min.js"></script>
+    <script src="../Js/jquery.SuperSlide.2.1.1.js"></script>
+
+</head>
+<body>
+<script>
+	$(document).ready(function(){
+    $("#search-text").focus(function(){
+        if($(this).val() == '搜索你想要的车'){
+            $(this).val('');
+        }
+    });
+    $("#search-text").blur(function(){
+        if($(this).val() == ''){
+            $(this).val('搜索你想要的车');
+        }
+    });
+});
+</script>
+
+	<!--header start*/-->
+	<header class="header">
+		<div class="wrapper">
+			<a href="/" class="logo"><img src="../img/logo-new.png"/></a>
+			<div class="search" >
+				<form class="index-search" action="http://www.51buycar.com" method="GET">
+					<input type="text" name="search_text" id="search-text" value="搜索你想要的车" class="search_text"/>
+					
+					
+					<div class="options">
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-5015?word=宝马">宝马</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/suv?word=宝马">SUV</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-375?word=锐志">锐志</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-657?word=科鲁兹">科鲁兹</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-982?word=英朗">英朗</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-614?word=朗逸">朗逸</a>
+					</div>
+				
+					<button type="submit" class="search-submit">
+						<i></i>
+					</button>
+				</form>
+			</div>
+		</div>
+		<nav class="nav">
+			<div class="wrapper clearfix">
+				<div class="main-nav">
+					<a targrt="_blank" href="http://www.51buycar.com" class="active">首页</a>
+					<a targrt="_blank" href="http://www.51buycar.com/sales/1">我要买车</a>
+					<a targrt="_blank" href="http://www.51buycar.com/sell.html">我要卖车</a>
+					<a targrt="_blank" href="">主题精选</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div id="detail-contain" class="wrapper clearfix">
+		<div id="detail-main" class="detail-wrap clearfix">
+			<div class="detail-photogallary">
+				<ul class="photoswrap">
+					<li class="photo-wrap photo-active" id="photo-wrap-0"><img src="../img/14.jpg"/></li>
+					<li class="photo-wrap" id="photo-wrap-1"><img src="../img/24.jpg"/></li>
+					<li class="photo-wrap" id="photo-wrap-2"><img src="../img/33.jpg"/></li>
+					<li class="photo-wrap" id="photo-wrap-3"><img src="../img/43.jpg"/></li>
+					<li class="photo-wrap" id="photo-wrap-4"><img src="../img/54.jpg"/></li>
+				</ul>
+				<div class="photo-tab">
+					<span class="photo-pre"></span>
+					<span class="photo-next"></span>
+
+				</div>
+				<div class="photo-more">
+					<div class="postname">车源编号&nbsp;<i>100021</i></div>
+				</div>
+				<div class="photoshop clearfix">
+					<p class="photoinfo">1/5</p>
+					<ul class="photosmall">
+						<li style="color:rgb(255 255 255);">
+							<img id="photosmall-0" i="0" src="../img/14-150x150.jpg" title alt="途观 2010款 1.8TSI 自动两驱都会版"/>
+						</li>
+						<li style="color:rgb(255 255 255);">
+							<img id="photosmall-1" i="1" src="../img/24-150x150.jpg" title alt="途观 2010款 1.8TSI 自动两驱都会版"/>
+						</li>
+						<li style="color:rgb(255 255 255);">
+							<img id="photosmall-2" i="2" src="../img/33-150x150.jpg" title alt="途观 2010款 1.8TSI 自动两驱都会版"/>
+						</li>
+						<li style="color:rgb(255 255 255);">
+							<img id="photosmall-3" i="3" src="../img/43-150x150.jpg" title alt="途观 2010款 1.8TSI 自动两驱都会版"/>
+						</li>
+						<li style="color:rgb(255 255 255);">
+							<img id="photosmall-4" i="4" src="../img/54-150x150.jpg" title alt="途观 2010款 1.8TSI 自动两驱都会版"/>
+					    </li>					
+					</ul>
+				</div>
+				<i class="car-tag-yushou-big"></i>
+			</div>
+			<div class="detail-main-info">
+				<h1><ins>途观 2010款 1.8TSI 自动两驱都会版</ins></h1>
+				<div class="detail-price clearfix">
+					<div class="detail-price-left">
+						<em>17.76万</em>
+						<lable>含过户费</lable>
+					</div>
+					<div class="detail-price-right">
+						<em class="reduce">为您节省5.24万</em>
+						<lable class="new">新&nbsp;车&nbsp;价 21.19万+1.81万(购置税)</lable>
+					</div>
+
+				</div>
+				<div class="price-others">
+					<div class="detail-price-other detail-price-fenqi">
+						<i class="fenqi"></i>
+						首付5.33万，月供3665万
+					</div>
+				</div>
+				<div class="car-detail clearfix">
+					<div class="item"><strong>2010-09-25</strong>首次上牌</div>
+					<div class="item"><strong>7.68万公里</strong>行驶里程</div>
+					<div class="item"><strong>上海</strong>归属地</div>
+					<div class="item"><strong>国IV国(V)</strong>排放标准</div>
+
+				</div>
+				<div class="detail-button">
+					<a class="detail-yuyue" href="javascript:void(0)" id="Reserves-link" data-reveal-id="mymodal" data-animation="fade
+					">预约看车</a>
+					<a class="fav">
+						<span></span>
+						<lable>收藏</lable>
+						<i id="J-car-favorite">17</i>
+					</a>
+				</div>
+				<div class="detail-feed clearfix">
+					<div class="detail-feed-hd clearfix" >
+						<span>分享到：</span>
+						<div class="detail-share">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="zhijian-tip clearfix">
+				<a class="zhijian-item zhijian-item1" href="#">
+				<span class="t">0事故车 火烧车 水浸车</span>
+				<span class="b">365项专业检测为您把关:<br>如有发现，无忧承诺全价退车!</span>
+				</a>
+				<a class="zhijian-item zhijian-item2" href="#">
+				<span class="t">1年2万公里质保</span>
+				<span class="b">免费享受新车般的质保:<br>范围涵盖发动机气缸、变速器等核心部件。</span>
+				</a>
+				<a class="zhijian-item zhijian-item3" href="#">
+				<span class="t">7天无理由退车</span>
+				<span class="b">退货险给您保障:<br>有任何不满意，7天内回来退!</span>
+				</a>
+			</div>
+
+		</div>
+		<div class="onsale-summary">
+			<div class="onsale-tab-space hidden" id="onsale-tab-space">
+			</div>
+			<div class="onsale-tab" id="onsale-tab">
+				<a class="onsale-tab-item onsale-tab-item-report active" data-index="onsale_report" data-scrollto="onsale_report">检测报告</a>
+				<a class="onsale-tab-item onsale-tab-item-pics " data-index="onsale_pics" data-scrollto="onsale_pics">车辆图片</a>
+				<a class="onsale-tab-item onsale-tab-item-config" data-index="onsale_config" data-scrollto="detail_para">配置参数</a>
+				<!--<a class="onsale-tab-item onsale-tab-item-comment" data-index="onsale_comment" data-scrollto="detail_comment">评论分享</a>-->
+			</div>
+			<div id="onsale_content">
+				<!--车检报告begin-->
+				<div id="onsale_report" class="onsale-content-item" style="display:;">
+					<div class="onsale-wrap report-sum clearfix" >
+						<div class="onsale-content-info clearfix" >
+							<h1></h1>
+							<div class="checker">
+								质检时间： 2014/09/03&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;质检工程师：李浩&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;质检对象：途观 2010款 1.8TSI 自动两驱都会版
+							</div>
+							<div class="check-explain">
+								*车型描述仅供参考，因厂家或车主有配置调整的情况，具体以配置实际情况为准
+							</div>
+							<div class="check-tag">B</div>
+							<div class="check-desc">发动机、底盘完好，做过钣金修复或更换过外观件</div>
+							<div class="level">
+								<div class="check-group clearfix">
+									<p>成色级别评分标准</p>
+									<div><span class="check-right"></span>表示没有问题</div>
+									<div><span class="check-error"></span>表示有异常</div>
+								</div>
+								<table class="check-group">
+									<thead>
+										<tr class="table_bg">
+											<th></th>
+											<th>发动机</th>
+											<th>底盘</th>
+											<th>漆面</th>
+											<th>外观成色</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<th>A+</th>
+											<td><span class="check-right"></span></td>
+											<td><span class="check-right"></span></td>
+											<td><span class="check-right"></span></td>
+											<td>较新</td>
+										</tr>
+										<tr>
+											<th>A</th>
+											<td><span class="check-right"></span></td>
+											<td><span class="check-right"></span></td>
+											<td><span class="check-right"></span></td>
+											<td>较旧</td>
+										</tr>
+										<tr>
+											<th>B+</th>
+											<td><span class="check-right"></span></td>
+											<td><span class="check-right"></span></td>
+											<td><span class="check-error"></span></td>
+											<td>较新</td>
+										</tr>
+										<tr class="currentstandard">
+											<th>B</th>
+											<td><span class="check-right"></span></td>
+											<td><span class="check-right"></span></td>
+											<td><span class="check-error"></span></td>
+											<td>较旧</td>
+										</tr>
+										<tr>
+											<th>C+</th>
+											<td><span class="check-right"></span></td>
+											<td><span class="check-error"></span></td>
+											<td></td>
+											<td>较新</td>
+										</tr>
+										<tr>
+											<th>C</th>
+											<td><span class="check-right"></span></td>
+											<td><span class="check-error"></span></td>
+											<td></td>
+											<td>较旧</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="onsale-wrap report-enginereport clearfix" >
+						<div class="onsale-title">
+							<h2>发动机检测<span></span></h2>
+							<p><span></span>经过缸压检测、汽缸壁检测、活塞顶检测，发动机状况良好，所有气缸缸压正常</p>
+						</div>
+						<div class="onsale-content-info clearfix">
+							<div class="check-group clearfix">
+								<p>图示说明：</p>
+									<div><span class="check-normal"></span>缸压正常</div>
+									<div><span class="check-higher"></span>缸压偏高</div>
+									<div><span class="check-lower"></span>缸压偏低</div>
+
+							</div>
+							<div class="engine-views">
+								<div class="engine-view">
+									<div class="engine-title">1号气缸</div>
+									<div class="engine-rule"><img width="180px" src="http://static.51buycar.com/images/detail-gangya.png?id=276&amp;number=1" style="display: inline;"></div>
+								</div>
+								<div class="engine-view">
+									<div class="engine-title">2号气缸</div>
+									<div class="engine-rule"><img width="180px" src="http://static.51buycar.com/images/detail-gangya.png?id=276&amp;number=1" style="display: inline;"></div>
+								</div>
+								<div class="engine-view">
+									<div class="engine-title">3号气缸</div>
+									<div class="engine-rule"><img width="180px" src="http://static.51buycar.com/images/detail-gangya.png?id=276&amp;number=1" style="display: inline;"></div>
+								</div>
+								<div class="engine-view">
+									<div class="engine-title">4号气缸</div>
+									<div class="engine-rule"><img width="180px" src="http://static.51buycar.com/images/detail-gangya.png?id=276&amp;number=1" style="display: inline;"></div>
+								</div>
+								<div class="engine-view">
+									<div class="engine-title">5号气缸</div>
+									<div class="engine-rule"><img width="180px" src="http://static.51buycar.com/images/detail-gangya.png?id=276&amp;number=1" style="display: inline;"></div>
+								</div>
+								<div class="engine-view">
+									<div class="engine-title">6号气缸</div>
+									<div class="engine-rule"><img width="180px" src="http://static.51buycar.com/images/detail-gangya.png?id=276&amp;number=1" style="display: inline;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="onsale-wrap report-underpan clearfix" >
+						<div class="onsale-title">
+							<h2>底盘检测<span></span></h2>
+							<p><span></span>经仪器检测，底盘26个点均未发生偏移</p>
+						</div>
+						<div class="onsale-content-info clearfix">
+							<div class="check-group clearfix">
+								<p>图示说明：</p>
+									<div><span class="check-normal"></span>表示正常</div>
+									<div><span class="check-higher"></span>表示有问题</div>
+									<div><span class="check-lower"></span>箭头表示偏移的方向</div>
+									<div><span class="check-lower"></span>表示偏移距离</div>
+
+							</div>
+							<div class="files-underpan">
+								<img src="../img/underpan.png"/>
+							</div>
+							<div class="point-underpan">
+								<p><ins>关键承重点:</ins>（关键承重点不能发生任何毫米级的偏移）</p>
+								<ul class="clearfix">
+									<li>5<span>ok</span></li>
+									<li>6<span>ok</span></li>
+									<li>7<span>ok</span></li>
+									<li>8<span>ok</span></li>
+									<li>9<span>ok</span></li>
+									<li>10<span>ok</span></li>
+									<li>11<span>ok</span></li>
+									<li>12<span>ok</span></li>
+									<li>13<span>ok</span></li>
+									<li>14<span>ok</span></li>
+									<li>15<span>ok</span></li>
+									<li>16<span>ok</span></li>
+									<li>17<span>ok</span></li>
+									<li>18<span>ok</span></li>
+									<li>19<span>ok</span></li>
+									<li>20<span>ok</span></li>
+									<li>21<span>ok</span></li>
+									<li>22<span>ok</span></li>
+								</ul>
+								<p><ins>次要承重点:</ins>（偏移范围在10mm以下不会影响安全和操控）</p>
+								<ul class="clearfix">
+									<li>1<span>ok</span></li>
+									<li>2<span>ok</span></li>
+									<li>3<span>ok</span></li>
+									<li>4<span>ok</span></li>
+									<li>23<span>ok</span></li>
+									<li>24<span>ok</span></li>
+									<li>25<span>ok</span></li>
+									<li>26<span>ok</span></li>
+								</ul>
+							</div>
+						</div>	
+					</div>
+					<div class="onsale-wrap report-drive clearfix" >
+						<div class="onsale-title">
+							<h2>驾驶体验<span></span></h2>
+							<p><span></span>经检测，汽车行驶过程中运行良好，未发现异常</p>
+						</div>
+						<div class="onsale-content-info">
+							<div class="check-group clearfix">
+								<p>图示说明：</p>
+									<div><span class="check-ok"></span>表示正常</div>
+									<div><span class="check-wrong"></span>表示故障</div>
+							</div>
+							<div class="drive-steps">
+								<div class="drive-step">
+									<div class="drive-title drive-step1"></div>
+									<ul>
+										<li>发动机<span class="check-ok"></span></li>
+										<li>制动系统<span class="check-ok"></span></li>
+									</ul>
+								</div>
+								<div class="drive-step">
+									<div class="drive-title drive-step2"></div>
+									<ul>
+										<li>发动机<span class="check-ok"></span></li>
+										<li>悬挂系统<span class="check-ok"></span></li>
+										<li>传动系统<span class="check-ok"></span></li>
+										<li>变速箱<span class="check-ok"></span></li>
+									</ul>
+								</div>
+								<div class="drive-step">
+									<div class="drive-title drive-step3"></div>
+									<ul>
+										<li>发动机<span class="check-ok"></span></li>
+										<li>传动系统<span class="check-ok"></span></li>
+										<li>变速箱<span class="check-ok"></span></li>
+									</ul>
+								</div>
+								<div class="drive-step">
+									<div class="drive-title drive-step4"></div>
+									<ul>
+										<li>转向系统<span class="check-ok"></span></li>
+										<li>变速箱<span class="check-ok"></span></li>
+										<li>悬挂系统<span class="check-ok"></span></li>
+										<li>发动机<span class="check-ok"></span></li>
+										<li>制动系统<span class="check-ok"></span></li>	
+									</ul>
+								</div>
+								<div class="drive-step">
+									<div class="drive-title drive-step5"></div>
+									<ul>
+										<li>变速箱<span class="check-ok"></span></li>
+										<li>发动机<span class="check-ok"></span></li>
+										<li>传动系统<span class="check-ok"></span></li>
+										<li>悬挂系统<span class="check-ok"></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--车检报告end-->
+				<!--车辆图片begin-->
+				<div id="onsale_pics" class="onsale-content-item" style="display:none;">
+					<img id="photo-pics-0" src="../img/14.jpg" alt="途观 2010款 1.8TSI 自动两驱都会版"/>
+					<img id="photo-pics-1" src="../img/24.jpg" alt="途观 2010款 1.8TSI 自动两驱都会版"/>
+					<img id="photo-pics-2" src="../img/33.jpg" alt="途观 2010款 1.8TSI 自动两驱都会版"/>
+					<img id="photo-pics-3" src="../img/43.jpg" alt="途观 2010款 1.8TSI 自动两驱都会版"/>
+					<img id="photo-pics-4" src="../img/54.jpg" alt="途观 2010款 1.8TSI 自动两驱都会版"/>
+				</div>
+				<!--车检报告end-->
+				<!--参数配置begin-->
+				<div id="onsale_config" class="onsale-content-item" style="display:none;">
+					<div class="onsale-wrap" id="detail-para">
+						<div class="onsale-content-info clearfix">
+							<h3>参数</h3>
+							<div class="para-table clearfix">
+								<table>
+									<caption>基本参数</caption>
+									<tbody>
+										<tr><th>车型</th><td>紧凑型</td></tr>
+										<tr><th>车辆颜色</th><td>-</td></tr>
+										<tr><th>长*宽*高(mm)</th><td>4525*1809*1665</td></tr>
+										<tr><th>变速箱</th><td>6挡手自一体</td></tr>
+										<tr><th>车身结构</th><td>5门5座SUV</td></tr>
+										<tr><th>整备质量(kg)</th><td>1580</td></tr>
+										<tr><th>车门数(个)</th><td>5</td></tr>
+										<tr><th>座位数(个)</th><td>5</td></tr>
+										<tr><th>油箱容积(L)</th><td>63</td></tr>
+										<tr><th>行李箱容积(L)</th><td>400-1530</td></tr>
+										<tr><th>最高车速</th><td>190</td></tr>
+										<tr><th>官方0-100km/h加速</th><td>-</td></tr>
+										<tr><th>工信部综合油耗</th><td>9.2</td></tr>
+									</tbody>
+								</table>
+								<table>
+									<caption>发动机参数</caption>
+									<tbody>
+										<tr><th>发动机</th><td>1.8T 160马力 L4</td></tr>
+						                <tr><th>发动机型号</th><td>EA888</td></tr>
+						                <tr><th>排量(mL)</th><td>1798</td></tr>
+						                <tr><th>进气形式</th><td>涡轮增压</td></tr>
+						                <tr><th>最大马力(Ps)</th><td>160</td></tr>
+						                <tr><th>最大功率(kW)</th><td>118</td></tr>
+						                <tr><th>最大扭矩(N·m)</th><td>-</td></tr>
+						                <tr><th>发动机特有技术</th><td>-</td></tr>
+						                <tr><th>燃料形式</th><td>汽油</td></tr>
+						                <tr><th>燃油标号</th><td>97号(京95号)</td></tr>
+						                <tr><th>供油方式</th><td>直喷</td></tr>
+						                <tr><th>环保标准</th><td>国IV(国V)</td></tr>
+									</tbody>
+								</table>
+								<table class="right">
+									<caption>底盘参数</caption>
+									<tbody>
+										<tr><th>驱动方式</th><td>前置前驱</td></tr>
+						                <tr><th>前悬架类型</th><td>麦弗逊式独立悬架</td></tr>
+						                <tr><th>后悬架类型</th><td>多连杆独立悬架</td></tr>
+						                <tr><th>助力类型</th><td>电动助力</td></tr>
+									</tbody>
+								</table>
+								<table class="right">
+									<caption>车轮制动</caption>
+									<tbody>
+										<tr><th>前制动器类型</th><td>通风盘式</td></tr>
+						                <tr><th>后制动器类型</th><td>盘式</td></tr>
+						                <tr><th>驻车制动类型</th><td>电子驻车</td></tr>
+						                <tr><th>前轮胎规格</th><td>215/65 R16</td></tr>
+						                <tr><th>后轮胎规格</th><td>215/65 R16</td></tr>
+						                <tr><th>备胎规格</th><td>非全尺寸</td></tr>
+									</tbody>
+								</table>
+							</div>
+							<h3>配置</h3>
+							<div class="check-group clearfix">
+								<p>图文说明:</p>
+								<div class="para-standard">
+									<ins clss="standard">●</ins>
+									表示车辆标准配置
+								</div>
+								<div class="para-plus">
+									<ins class="plus">○</ins>
+									表示车辆自行添加的配置
+								</div>
+								<div class="para-select">
+									<ins class="select">-</ins>
+									表示车辆无此配置
+								</div>
+							</div>
+							<div class="para-table clearfix">
+								<table>
+									<caption>安全配置</caption>
+									<tbody>
+										<tr><th>主/副驾驶座安全气囊</th><td>主<ins class="standard">●</ins> / 副<ins class="standard">●</ins></td></tr>
+						                <tr><th>前/后排侧气囊</th><td>前<ins class="standard">●</ins> / 后<ins class="select">-</ins></td></tr>
+						                <tr><th>前/后排头部气囊(气帘)</th><td>前<ins class="select">-</ins> / 后<ins class="select">-</ins></td></tr>
+						                <tr><th>膝部气囊</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>胎压监测装置</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>零胎压继续行驶</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>ISOFIX儿童座椅接口</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>发动机电子防盗</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>遥控钥匙</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>车内中控锁</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>无钥匙启动系统</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>无钥匙进入系统</th><td><ins class="select">-</ins></td></tr>
+									</tbody>
+								</table>
+								<table>
+									<caption>内部配置</caption>
+									<tbody>
+										<tr><th>真皮方向盘</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>方向盘调节</th><td>上下+前后调节</td></tr>
+						                <tr><th>方向盘电动调节</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>多功能方向盘</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>方向盘换挡</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>方向盘加热</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>定速巡航</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>前/后驻车雷达</th><td>前<ins class="select">-</ins> / 后<ins class="select">-</ins></td></tr>
+						                <tr><th>倒车视频影像</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>行车电脑显示屏</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>HUD抬头数字显示</th><td><ins class="select">-</ins></td></tr>
+									</tbody>
+								</table>
+								<table class="right">
+									<caption>外部配置</caption>
+									<tbody>
+										<tr><th>电动天窗</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>全景天窗</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>铝合金轮圈</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>电动后备厢</th><td><ins class="select">-</ins></td></tr>
+									</tbody>
+								</table>
+								<table class="right">
+									<caption>玻璃/后视镜</caption>
+									<tbody>
+										<tr><th>前/后电动车窗</th><td>前<ins class="select">-</ins> / 后<ins class="select">-</ins></td></tr>
+						                <tr><th>车窗防夹手功能</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>后视镜电动调节</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>后视镜加热</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>后视镜电动折叠</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>内/外后视镜自动防眩目</th><td>内<ins class="select">-</ins> / 外<ins class="select">-</ins></td></tr>
+									</tbody>
+								</table>
+								
+							</div>
+							<div class="para-table clearfix">
+								<table>
+									<caption>座椅配置</caption>
+									<tbody>
+										<tr><th>真皮/仿皮座椅</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>座椅高低调节</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>腰部支撑调节</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>主/副驾驶座电动调节</th><td>主<ins class="select">-</ins> / 副<ins class="select">-</ins></td></tr>
+						                <tr><th>第二排靠背角度调节</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>电动座椅记忆</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>前/后排座椅加热</th><td>前<ins class="select">-</ins> / 后<ins class="select">-</ins></td></tr>
+						                <tr><th>前/后排座椅通风</th><td>前<ins class="select">-</ins> / 后<ins class="select">-</ins></td></tr>
+						                <tr><th>第三排座椅</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>前/后中央扶手</th><td>前<ins class="select">-</ins> / 后<ins class="standard">●</ins></td></tr>
+						                <tr><th>后排杯架</th><td><ins class="standard">●</ins></td></tr>
+									</tbody>
+								</table>
+								<table>
+									<caption>多媒体配置</caption>
+									<tbody>
+										<tr><th>GPS导航系统</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>定位互动服务</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>中控台彩色大屏</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>内置硬盘</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>蓝牙/车载电话</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>车载电视</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>后排液晶屏</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>外接音源接口</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>CD支持MP3/WMA</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>多媒体系统</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>扬声器数量</th><td>4-5喇叭</td></tr>
+									</tbody>
+								</table>
+								<table class="right">
+									<caption>操控配置</caption>
+									<tbody>
+										<tr><th>EBD电子制动分配</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>EBA电子刹车辅助</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>ESP车身稳定控制</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>TRC牵引力控制</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>可变悬架</th><td><ins class="select">-</ins></td></tr>
+									</tbody>
+								</table>
+								<table class="right">
+									<caption>空调配置</caption>
+									<tbody>
+										<tr><th>空调控制方式</th><td>手动<ins class="standard">●</ins></td></tr>
+						                <tr><th>后座出风口</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>温度分区控制</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>车内空气调节/花粉过滤</th><td><ins class="select">-</ins></td></tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="para-table clearfix">
+								<table>
+									<caption>灯光配置</caption>
+									<tbody>
+										<tr><th>氙气大灯</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>LED大灯</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>日间行车灯</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>转向头灯(辅助灯)</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>自动头灯</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>前雾灯</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>大灯高度可调</th><td><ins class="standard">●</ins></td></tr>
+						                <tr><th>大灯清洗装置</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>车内氛围灯</th><td><ins class="select">-</ins></td></tr>
+									</tbody>
+								</table>
+								<table>
+									<caption>高科技配置</caption>
+									<tbody>
+										<tr><th>自动泊车入位</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>发动机启停技术</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>并线辅助</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>车道偏离预警系统</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>主动刹车/主动安全系统</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>整体主动转向系统</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>自适应巡航</th><td><ins class="select">-</ins></td></tr>
+						                <tr><th>全景摄像头</th><td><ins class="select">-</ins></td></tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--参数配置end-->
+			</div>
+		</div>
+.
+		<div class="detail-othercars clearfix">
+			<h2 class="detail-title">您可能会喜欢</h2>
+			<ul class="yushoubox carbox clearfix">
+				<li>
+					<a class="car-pic" href="http://www.51buycar.com/sales/270.html" target=_blank>
+						<img alt="牧马人 2010款 3.8L 两门版 Sahara" src="../img/11-300x200.jpg" width="240px">
+						<dl class="car-info">
+							<dt><a href="http://www.51buycar.com/sales/270.html">牧马人 2010款 3.8L 两门版 Sahara</a></dt>
+							<dd class="car-price">￥26.56万</dd>
+							<dd class="car-price-old">新车价<del>￥41.9万</del></dd>
+							<dd class="car-other">
+								<div class="car-otheritem">上牌:<ins>   2010/02</ins></div>
+								<div class="car-otheritem car-rightother">里程:<ins>   5.72万公里</ins></div>
+							</dd>
+						</dl>
+						<i class="car-tag-yushou"></i>
+					</a>
+				</li>
+				<li>
+					<a class="car-pic" href="http://www.51buycar.com/sales/270.html" target=_blank>
+						<img alt="牧马人 2010款 3.8L 两门版 Sahara" src="../img/11-300x200.jpg" width="240px">
+						<dl class="car-info">
+							<dt><a href="http://www.51buycar.com/sales/270.html">牧马人 2010款 3.8L 两门版 Sahara</a></dt>
+							<dd class="car-price">￥26.56万</dd>
+							<dd class="car-price-old">新车价<del>￥41.9万</del></dd>
+							<dd class="car-other">
+								<div class="car-otheritem">上牌:<ins>   2010/02</ins></div>
+								<div class="car-otheritem car-rightother">里程:<ins>   5.72万公里</ins></div>
+							</dd>
+						</dl>
+						<i class="car-tag-yushou"></i>
+					</a>
+				</li>
+				<li>
+					<a class="car-pic" href="http://www.51buycar.com/sales/270.html" target=_blank>
+						<img alt="牧马人 2010款 3.8L 两门版 Sahara" src="../img/11-300x200.jpg" width="240px">
+						<dl class="car-info">
+							<dt><a href="http://www.51buycar.com/sales/270.html">牧马人 2010款 3.8L 两门版 Sahara</a></dt>
+							<dd class="car-price">￥26.56万</dd>
+							<dd class="car-price-old">新车价<del>￥41.9万</del></dd>
+							<dd class="car-other">
+								<div class="car-otheritem">上牌:<ins>   2010/02</ins></div>
+								<div class="car-otheritem car-rightother">里程:<ins>   5.72万公里</ins></div>
+							</dd>
+						</dl>
+						<i class="car-tag-yushou"></i>
+					</a>
+				</li>
+				<li>
+					<a class="car-pic" href="http://www.51buycar.com/sales/270.html" target=_blank>
+						<img alt="牧马人 2010款 3.8L 两门版 Sahara" src="../img/11-300x200.jpg" width="240px">
+						<dl class="car-info">
+							<dt><a href="http://www.51buycar.com/sales/270.html">牧马人 2010款 3.8L 两门版 Sahara</a></dt>
+							<dd class="car-price">￥26.56万</dd>
+							<dd class="car-price-old">新车价<del>￥41.9万</del></dd>
+							<dd class="car-other">
+								<div class="car-otheritem">上牌:<ins>   2010/02</ins></div>
+								<div class="car-otheritem car-rightother">里程:<ins>   5.72万公里</ins></div>
+							</dd>
+						</dl>
+						<i class="car-tag-yushou"></i>
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+	</div>
+
+	<footer role="contentinfo" class="footer">
+		<span>Copyright &copy 2014  51BuyCar,All Rights Reserved<br/>
+
+		<a target="_blank href="">沪ICP备 14027574-1 号</a>
+	    </span>
+	</footer>
+	</body>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".onsale-tab-item").click(function(){
+	        var id = $(this).attr("data-index");
+	        $(".onsale-tab-item").removeClass("active");
+	        $(this).addClass("active");
+
+	        if(id == 'onsale_comment'){
+	            scroll();
+	            return;
+	        }
+	        $(".onsale-content-item").hide();
+	        $("#"+id).show();
+    });
+    $(".photosmall li img").mouseover(function(){
+    	$(".photosmall li").css('border-color','#fff');
+    	$(this).parent().css('border-color','#e70');
+    	$(".photo-wrap").removeClass("photo-active");
+    	$("#photo-wrap-"+$(this).attr("i")).addClass("photo-active");
+    	$(".photoinfo").text((parseInt($(this).attr("i")) + 1) + "/5 " + $(this).attr("title"));
+    });
+});
+</script>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<html lang="en">
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/common.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<script src="Js/jquery1.42.min.js"></script>
+    <script src="Js/jquery.SuperSlide.2.1.1.js"></script>
+
+</head>
+<body>
+<script>
+	$(document).ready(function(){
+    $("#search-text").focus(function(){
+        if($(this).val() == '搜索你想要的车'){
+            $(this).val('');
+        }
+    });
+    $("#search-text").blur(function(){
+        if($(this).val() == ''){
+            $(this).val('搜索你想要的车');
+        }
+    });
+});
+</script>
+
+	<!--header start*/-->
+	<header class="header">
+		<div class="wrapper">
+			<a href="/" class="logo"><img src="img/logo-new.png"/></a>
+			<div class="search" >
+				<form class="index-search" action="http://www.51buycar.com" method="GET">
+					<input type="text" name="search_text" id="search-text" value="搜索你想要的车" class="search_text"/>
+					
+					
+					<div class="options">
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-5015?word=宝马">宝马</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/suv?word=宝马">SUV</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-375?word=锐志">锐志</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-657?word=科鲁兹">科鲁兹</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-982?word=英朗">英朗</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-614?word=朗逸">朗逸</a>
+					</div>
+				
+					<button type="submit" class="search-submit">
+						<i></i>
+					</button>
+				</form>
+			</div>
+		</div>
+		<nav class="nav">
+			<div class="wrapper clearfix">
+				<div class="main-nav">
+					<a targrt="_blank" href="http://www.51buycar.com" class="active">首页</a>
+					<a targrt="_blank" href="http://www.51buycar.com/sales/1">我要买车</a>
+					<a targrt="_blank" href="http://www.51buycar.com/sell.html">我要卖车</a>
+					<a targrt="_blank" href="">主题精选</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+
+
+
+
+
+
+
+	<footer role="contentinfo" class="footer">
+		<span>Copyright &copy 2014  51BuyCar,All Rights Reserved<br/>
+
+		<a target="_blank href="#">沪ICP备 14027574-1 号</a>
+	    </span>
+	</footer>
+	<!--footer end-->
+	
+</body>
+<script type="text/javascript">
+
+jQuery(".main-slider").slide({
+    mainCell: ".slider-img ul",
+    autoPlay: true,
+    effect: "leftLoop"
+});
+
+$(document).ready(function(){
+	$(".car-brand").mouseover(function(){
+        $(".brand-inner").removeClass("hidden");
+    });
+    $(".car-brand").mouseout(function(){
+        $(".brand-inner").addClass("hidden");
+    });
+    $(".brand-letter a").mouseover(function(){
+        $(this).css({color:'#fc7000'});
+    });
+    $(".brand-letter a").mouseout(function(){
+        $(this).css({color:'#666'});
+    });
+
+
+    $(".category-nav").mouseover(function(){
+        $(".category-nav").removeClass("active");
+        $(this).addClass("active");
+        $(".cars-list").addClass("hidden");
+        $("#"+$(this).attr("data-id")).removeClass("hidden");
+    });
+
+});
+
+
+</script> 
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+    $("#car_brands").change(function(){
+        var brand_id = $(this).val();
+        load_models(brand_id);
+    });
+    
+    $("#car_models").change(function(){
+        var model_id = $(this).val();
+        load_items(model_id);
+    });
+    
+    $("#_submit").click(function(){
+
+    	var brand_id = $("#car_brands").val();
+        
+        var brand_id = document.getElementById("car_brands").value;
+
+
+        var model_id = $("#car_models").val();
+        var item_id = $("#car_items").val();
+        var car_name = $("#car_items option:selected").text();
+
+        var mobile = $("#mobile").val();
+        
+        /*if(brand_id == 0){
+            $(".warning").text("请选择品牌").show();
+            return true;
+        }
+        if(model_id == 0){
+            $(".warning").text("请选择车系").show();
+            return true;
+        }*/
+
+        '1860602816322'
+        var reg = /^1[3|4|5|7|8]\d{9}$/;
+
+        if(reg.test(mobile)){
+
+        }else{
+        	$(".warning").text("请输入正确的手机号码").show();
+        }
+        
+        if(/^1\d{10}$/g.test(mobile)){
+            $.get("/index.php?action=save_sell&brand_id=" + brand_id + "&model_id=" + set_model_id + "&item_id=" + item_id + "&mobile=" + mobile + "&car_name=" + car_name, function(data){
+                $(".sellcar-success").show();
+            });
+        }else{
+
+
+            $(".warning").text("请输入正确的手机号码").show();
+        }
+        
+    });
+        
+    function load_models(brand_id){	
+        $.get("/index.php?action=get_models&brand_id=" + brand_id, function(models){
+            $("#car_models").empty();
+            $("#car_models").append('<option value="0" selected="selected">--请选择--</option>');
+            for(var company_id in models){
+                var parent = models[company_id];
+
+                $("#car_models").append('<option value="0" disabled="disabled" style="color:#FF0000;">'+ parent.name +'</option>');
+                for(var model_id in parent.items){
+                    $("#car_models").append('<option value="'+parent.items[model_id].id+'" >&nbsp;'+ parent.items[model_id].model_name +'</option>');
+                }
+            }
+            
+        }, 'json');
+        
+        $("#select_car_brand_id").val(brand_id);
+    }
+
+
+    function load_items(model_id, init){
+        $.get("/index.php?action=get_items&model_id=" + model_id, function(items){
+            $("#car_items").empty();
+            $("#car_items").append('<option value="0" selected="selected">--请选择--</option>');
+            for(var item_id in items){
+                $("#car_items").append('<option value="'+ items[item_id].id +'" >'+ items[item_id].item_name +'</option>');
+            }
+            if(init){
+                set_item_id();
+            }
+        }, 'json');
+        
+        $("#select_car_model_id").val(model_id);
+    }
+    
+    
+});
+
+</script>
+</html>

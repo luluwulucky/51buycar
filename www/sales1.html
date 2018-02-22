@@ -1,0 +1,374 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<html lang="en">
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/sale1.css"/>
+	<link rel="stylesheet" href="css/common.css"/>
+	<script src="Js/jquery1.42.min.js"></script>
+    <script src="Js/jquery.SuperSlide.2.1.1.js"></script>
+
+</head>
+<body>
+<script>
+	$(document).ready(function(){
+    $("#search-text").focus(function(){
+        if($(this).val() == '搜索你想要的车'){
+            $(this).val('');
+        }
+    });
+    $("#search-text").blur(function(){
+        if($(this).val() == ''){
+            $(this).val('搜索你想要的车');
+        }
+    });
+});
+</script>
+
+	<!--header start*/-->
+	<header class="header">
+		<div class="wrapper">
+			<a href="/" class="logo"><img src="img/logo-new.png"/></a>
+			<div class="search" >
+				<form class="index-search" action="http://www.51buycar.com" method="GET">
+					<input type="text" name="search_text" id="search-text" value="搜索你想要的车" class="search_text"/>
+					
+					
+					<div class="options">
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-5015?word=宝马">宝马</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/suv?word=宝马">SUV</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-375?word=锐志">锐志</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-657?word=科鲁兹">科鲁兹</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-982?word=英朗">英朗</a>
+						<a target="_blank" href="http://www.51buycar.com/sales/brand-614?word=朗逸">朗逸</a>
+					</div>
+				
+					<button type="submit" class="search-submit">
+						<i></i>
+					</button>
+				</form>
+			</div>
+		</div>
+		<nav class="nav">
+			<div class="wrapper clearfix">
+				<div class="main-nav">
+					<a targrt="_blank" href="http://www.51buycar.com" class="active">首页</a>
+					<a targrt="_blank" href="http://www.51buycar.com/sales/1">我要买车</a>
+					<a targrt="_blank" href="http://www.51buycar.com/sell.html">我要卖车</a>
+					<a targrt="_blank" href="">主题精选</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!--header end-->
+	<div class="choose">
+		<div class="wrapper clearfix">
+			<div class="choose-condition">
+				<p>共有30辆车</p>
+			</div>
+
+			<div class="orderby">
+				<a id="sortcreat" class="order-item order-active" order-active href="#">默认</a>
+				<a id="sortprice" class="order-item" href="#">价格
+				<span></span>
+				</a>
+				<a id="sortmiles" class="order-item"  href="#">里程
+				<span></span>
+				</a>
+			</div>   
+		</div>
+	</div>
+	<div id="listcontain" class="wrapper clearfix">
+		<div id="list-wrap" class="wrapper clearfix">
+			<div class="nav-container">
+				
+				<div class="list-nav clearfix">
+					<div class="list-nav-contain">
+						<div id="brand-all" class="list-nav-wrap nav-brand">
+							<h1 class="list-nav-title clearfix">
+								<lable>品牌</lable>
+								<a class="nav-list-more href="">更多 » </a>
+							</h1>
+							<ul class="find-all">
+								<li><a href="http://www.51buycar.com/sales/brand-5001">大众</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">丰田</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">本田</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">日产</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">福特</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">别克</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">现代</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">马自达</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">荣威</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">起亚</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">标志</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">雪佛兰</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">三菱</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">雪铁龙</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">斯柯达</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">沃尔沃</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">奥迪</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">宝马</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">奔驰</a></li>
+								<li><a href="http://www.51buycar.com/sales/brand-5001">雷克萨斯</a></li>
+							</ul>
+							<div class="list-allbrand clearfix" style="width:710px; display:none">
+							</div>
+
+							
+						</div>
+						<div class="list-nav-wrap nav-price">
+							<h1 class="list-nav-title clearfix">
+								<lable>价格</lable>
+								<em>(万元)</em>
+							</h1>
+							<div class="price-src clearfix">
+								<div class="unlimited">99</div>
+								<a title="0-8万" href="http://www.51buyCar.com/sales/p1" class="price-range">
+								<i></i>
+								<span>&nbsp;&nbsp;0</span>
+								</a>
+								<a title="8-12万" href="http://www.51buyCar.com/sales/p2" class="price-range">
+								<i></i>
+								<span>&nbsp;8</span>
+								</a>
+								<a title="12-18万" href="http://www.51buyCar.com/sales/p3" class="price-range">
+								<i></i>
+								<span>12</span>
+								</a>
+								<a title="18-24万" href="http://www.51buyCar.com/sales/p4" class="price-range">
+								<i></i>
+								<span>18</span>
+								</a>
+								<a title="24-35万" href="http://www.51buyCar.com/sales/p5" class="price-range">
+								<i></i>
+								<span>24</span>
+								</a>
+								<a title="35万以上" href="http://www.51buyCar.com/sales/p6" class="price-range">
+								<i></i>
+								<span>35</span>
+								</a>	
+							</div>
+						</div>
+						<div class="list-nav-wrap nav-dis toggle-nav">
+							<h1 class="list-nav-title">车龄</h1>
+							<div data-ui="dropdown" class="sc-option">
+								<div class="sc-option-hd">
+									<div class="sc-option-content">请选择车龄年限</div>
+									<div class="sc-option-action"><i></i></div>
+								</div>
+								<ul class="sc-option-list">
+									<li><a href="http://www.51buyCar.com/sales/a1">1年以内</a></li>
+									<li><a href="http://www.51buyCar.com/sales/a2">1-2年</a></li>
+									<li><a href="http://www.51buyCar.com/sales/a3">2-3年</a></li>
+									<li><a href="http://www.51buyCar.com/sales/a4">3-5年</a></li>
+									<li><a href="http://www.51buyCar.com/sales/a5">5-8年</a></li>
+									<li><a href="http://www.51buyCar.com/sales/a6">8-12年</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="list-nav-wrap nav-dis toggle-nav">
+							<h1 class="list-nav-title">里程</h1>
+							<div data-ui="dropdown" class="sc-option">
+								<div class="sc-option-hd">
+									<div class="sc-option-content">请选择里程数</div>
+									<div class="sc-option-action"><i></i></div>
+								</div>
+								<ul class="sc-option-list">
+									<li><a href="http://www.51buyCar.com/sales/a1">1万公里以内</a></li>
+									<li><a href="http://www.51buyCar.com/sales/a2">1-2万公里</a></li>
+									<li><a href="http://www.51buyCar.com/sales/a3">2-3万公里</a></li>
+									<li><a href="http://www.51buyCar.com/sales/a4">3-5万公里</a></li>
+									<li><a href="http://www.51buyCar.com/sales/a5">5-8万公里</a></li>
+									<li><a href="http://www.51buyCar.com/sales/a6">8-12万公里</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="list-nav-wrap nav-type toggle-nav">
+							<h1 class="list-nav-title">车型</h1>
+							<ul class="clearfix">
+								<li><a href="http://www.51buyCar.com/sales/SUV">SUV</a></li>
+								<li><a href="http://www.51buyCar.com/sales/mpv">MPV</a></li>
+								<li><a href="http://www.51buyCar.com/sales/a00-a0">微小型车</a></li>
+								<li><a href="http://www.51buyCar.com/sales/a">紧凑型车</a></li>
+								<li><a href="http://www.51buyCar.com/sales/b">中型车</a></li>
+								<li><a href="http://www.51buyCar.com/sales/c">中大型车</a></li>
+								<li><a href="http://www.51buyCar.com/sales/d">豪华车</a></li>
+								<li><a href="http://www.51buyCar.com/sales/s">跑车</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="list-main">
+				<div class="list-items">
+					<div class="list-content clearfix">
+						<a class="list-content-img" target="blank" href="http://www.51buyCar.com/sales/276.html">
+							<img src="img/1-300x200.jpg" alt="宝马5系 2011款 528Li 领先型">
+						</a>
+						<div class="list-content-carsinfo">
+							<h1><a href="http://www.51buyCar.com/sales/276.html" target="blank">宝马5系 2011款 528Li 领先型</a>
+							</h1>
+							<div class="list-content-price clearfix">
+								<div class="list-content-price-new">￥34.55万</div>
+								<div style="text-align: left"><del style="padding-left: 20px;">￥55.07万</del></div>
+							</div>
+							<div class="list-content-other clearfix">
+								<div style="border-left: none; text-align: left; padding-left: 0;">
+									<ins>6.41</ins>
+									<span>万</span>公里
+								</div>
+								<div class="list-content-other-age">
+									<ins>2011/09</ins>
+									<span></span>上牌
+								</div>
+								<div>
+									<ins>欧IV</ins>
+									<span></span>排放
+								</div>
+							</div>
+							<div class="list-content-action clearfix">
+								<span>亮点：</span>
+								<a class="blue-a" href="#">保养好</a>
+								<a class="orange-a" href="#">GPS</a>
+								<a class="orange-a" href="#">定速巡航</a>
+								<a class="orange-a" href="#">经典直6</a>
+							</div>
+							<div class="list-content-service clearfix">
+								<div><span></span>7天退货</div>
+								<div><span></span>保1年2万公里</div>
+								<div><span></span>分期付款</div>
+							</div>
+						</div>
+						<i class="car-tag-zhijian">B</i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<footer role="contentinfo" class="footer">
+		<span>Copyright &copy 2014  51BuyCar,All Rights Reserved<br/>
+
+		<a target="_blank href="">沪ICP备 14027574-1 号</a>
+	    </span>
+	</footer>
+	</body>
+<script type="text/javascript">
+jQuery(".main-slider").slide({
+    mainCell: ".slider-img ul",
+    autoPlay: true,
+    effect: "leftLoop"
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".sc-option").click(function(){
+        $(this).children(".sc-option-list").eq(0).toggle(); 
+    });
+    $("#brand_all").hover(function(){
+        $(".list_allBrand").toggle(); 
+        $(".nav_brand").toggleClass("nav_brand_active");
+    });
+});
+</script>
+</html>
